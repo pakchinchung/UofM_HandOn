@@ -26,6 +26,12 @@ void MILLIS_Initialize(void)
     Timer0_OverflowCallbackRegister(MILLIS_Tick);
 }
 
+bool MILLIS_TickIsOneMs(void)
+{
+    /* One overflow spans PER + 1 prescaled ticks. */
+    return ((Timer0_PeriodGet() + 1UL) == (TCA0_CLOCK_FREQ / 1000UL));
+}
+
 uint32_t millis(void)
 {
     uint32_t value;

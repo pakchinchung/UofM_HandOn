@@ -28,6 +28,20 @@ extern "C" {
 void MILLIS_Initialize(void);
 
 /**
+ * @brief Checks that TCA0 really is set up for a 1 ms overflow.
+ *
+ * The whole timebase rests on PER + 1 prescaled ticks equalling one
+ * millisecond. If MCC is ever regenerated with a different clock or period this
+ * silently stops being true, so callers can check once at start-up rather than
+ * chase a timebase that is quietly wrong.
+ *
+ * @param None.
+ * @retval true if the TCA0 overflow period is exactly 1 ms
+ * @retval false otherwise
+ */
+bool MILLIS_TickIsOneMs(void);
+
+/**
  * @brief Returns the number of milliseconds since MILLIS_Initialize().
  *        Safe to call from main context and from an ISR.
  * @param None.

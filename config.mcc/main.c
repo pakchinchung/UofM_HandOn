@@ -35,8 +35,13 @@
 #include <stdio.h>
 #include "mcc_generated_files/system/system.h"
 #include "millis.h"
+#include "i2c_bus.h"
+#include "ssd1306.h"
+#include "mcp23008.h"
+#include "pot.h"
+#include "bringup.h"
 
-#define LED_BLINK_INTERVAL_MS (1000UL)
+#define LED_BLINK_INTERVAL_MS (500UL)
 
 /*
     Main application
@@ -45,6 +50,8 @@
 int main(void)
 {
     uint32_t ledLastToggle;
+    bool oledOk;
+    bool ioOk;
 
     SYSTEM_Initialize();
     MILLIS_Initialize();
@@ -53,20 +60,75 @@ int main(void)
     printf("\r\n=== TestAi2 boot ===\r\n");
     printf("Device : AVR128DA48 @ %lu Hz\r\n", (unsigned long)F_CPU);
     printf("UART   : USART1 115200 8N1\r\n");
-    printf("Timer  : TCA0 1 ms tick, millis() ready\r\n");
-    printf("LED    : PC6 toggling every %lu ms\r\n\r\n",
-           (unsigned long)LED_BLINK_INTERVAL_MS);
+    printf("Timer  : TCA0 1 ms tick, millis() %s\r\n",
+           MILLIS_TickIsOneMs() ? "ready" : "TICK IS NOT 1 ms!");
+    printf("I2C    : TWI0 on PC2/PC3, per-device speed\r\n");
+
+    POT_Initialize();
+    printf("POT    : ADC0 AIN7 (PD7), first read %u\r\n", POT_RawGet());
+
+    /* Scan before touching either device, so a wrong address or a dead bus is
+     * visible as data instead of guessed at from a failed init. */
+    {
+        uint8_t found[8];
+        uint8_t count = I2C_BusScan(I2C_SPEED_STANDARD, found, (uint8_t)sizeof(found));
+        uint8_t i;
+
+        printf("I2Cscan: %u device(s) at 100 kHz:", count);
+        for (i = 0; i < count; i++)
+        {
+            printf(" 0x%02X", found[i]);
+        }
+        if (0U == count)
+        {
+            printf(" none - check SDA=PC2 SCL=PC3, pull-ups and power");
+        }
+        printf("\r\n");
+    }
+
+    oledOk = SSD1306_Initialize();
+    printf("OLED   : SSD1306 0x%02X %s", SSD1306_I2C_ADDR, oledOk ? "OK" : "FAILED");
+    if (!oledOk)
+    {
+        /* Step 0 means the address never acknowledged. 0xF0 is the frame buffer
+         * push, 0xF1 the final display-on. Error 1 is an address NACK, 2 a data
+         * NACK, 3 a bus collision, 0x10 a timeout. */
+        printf(" at step 0x%02X, i2c error %u",
+               SSD1306_InitFailStepGet(), SSD1306_InitFailErrorGet());
+    }
+    printf("\r\n");
+
+    ioOk = MCP23008_Initialize();
+    printf("IOEXP  : MCP23008 0x%02X %s (GP5=JUMP GP6=START GP7=RESET)\r\n",
+           MCP23008_I2C_ADDR, ioOk ? "OK" : "NO RESPONSE");
+    printf("Buttons: active low, external pull-ups, GPPU off\r\n\r\n");
+
+    if (oledOk)
+    {
+        BRINGUP_Initialize();
+    }
+    else
+    {
+        printf("Bring-up screen skipped, no display.\r\n");
+    }
 
     ledLastToggle = millis();
 
     while(1)
     {
+        /* Input samplers. Both rate limit themselves internally. */
+        MCP23008_Tasks();
+        POT_Tasks();
+
+        if (oledOk)
+        {
+            BRINGUP_Tasks();
+        }
+
+        /* Heartbeat, so a wedged main loop is obvious without a terminal. */
         if(MILLIS_IntervalElapsed(&ledLastToggle, LED_BLINK_INTERVAL_MS))
         {
             IO_PC6_Toggle();
-            printf("[%lu ms] LED PC6 = %d\r\n",
-                   (unsigned long)millis(),
-                   (IO_PC6_GetValue() != 0) ? 1 : 0);
         }
     }
 }

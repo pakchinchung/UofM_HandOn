@@ -8,8 +8,20 @@
 #include "millis.h"
 #include "mcc_generated_files/system/system.h"
 
-/* Shift used by the exponential moving average: avg += (sample - avg) >> N. */
+/* Shift used by the exponential moving average: avg += (sample - avg) >> N.
+ * Only applied while the knob is nearly still. */
 #define POT_FILTER_SHIFT (2U)
+
+/* Movement larger than this many counts is treated as the user deliberately
+ * turning the knob, and is tracked with no filtering at all.
+ *
+ * A plain moving average is wrong for a paddle: at a 5 ms sample interval a
+ * shift of 2 gives roughly a 20 ms time constant, which reads as lag when you
+ * are trying to intercept a ball. Smoothing only exists to stop the last couple
+ * of ADC bits flickering, and that noise is small. 24 counts out of 4095 is
+ * under 0.6% of travel, well under one pixel of paddle movement, so real input
+ * always crosses the threshold and arrives immediately. */
+#define POT_MOVE_THRESHOLD (24)
 
 /* CLK_ADC has to land inside 50 kHz..1.5 MHz for a 12-bit conversion, so the
  * prescaler is derived from F_CPU. MCC emits PRESC_DIV2, which was fine at
@@ -60,16 +72,25 @@ static void POT_ConversionDone(void)
 
     delta = sample - (int16_t)potAverage;
 
-    /* The shift discards the final increments, so snap once inside one step or
-     * the average would never quite reach the endpoints. */
-    if ((delta < (int16_t)(1U << POT_FILTER_SHIFT)) &&
-        (delta > -(int16_t)(1U << POT_FILTER_SHIFT)))
     {
-        potAverage = (uint16_t)sample;
-    }
-    else
-    {
-        potAverage = (uint16_t)((int16_t)potAverage + (delta >> POT_FILTER_SHIFT));
+        int16_t magnitude = (delta < 0) ? (int16_t)-delta : delta;
+
+        if (magnitude > POT_MOVE_THRESHOLD)
+        {
+            /* Deliberate movement: no filtering, so the paddle has no lag. */
+            potAverage = (uint16_t)sample;
+        }
+        else if (magnitude <= (int16_t)(1U << POT_FILTER_SHIFT))
+        {
+            /* The shift discards the final increments, so snap once inside one
+             * step or the average would never quite reach the endpoints. */
+            potAverage = (uint16_t)sample;
+        }
+        else
+        {
+            /* Nearly still: smooth away the last noisy ADC bits. */
+            potAverage = (uint16_t)((int16_t)potAverage + (delta >> POT_FILTER_SHIFT));
+        }
     }
 
     potBusy = false;

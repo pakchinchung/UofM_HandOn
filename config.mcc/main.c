@@ -41,6 +41,17 @@
 #include "pot.h"
 #include "bringup.h"
 #include "dino_game.h"
+#include "breakout.h"
+#include "menu.h"
+
+/* What the shell is currently running. GP7 always returns this to the menu. */
+typedef enum
+{
+    SHELL_MODE_MENU = 0,
+    SHELL_MODE_DINO,
+    SHELL_MODE_BREAKOUT,
+    SHELL_MODE_DIAGNOSTIC,
+} shell_mode_t;
 
 #define LED_BLINK_INTERVAL_MS (500UL)
 
@@ -71,7 +82,8 @@ int main(void)
     uint32_t ledLastToggle;
     bool oledOk;
     bool ioOk;
-    bool diagnosticMode;
+    shell_mode_t shellMode = SHELL_MODE_MENU;
+    uint8_t pendingEdges = 0;
 
     SYSTEM_Initialize();
     MILLIS_Initialize();
@@ -248,22 +260,13 @@ int main(void)
         printf("\r\n");
     }
 
-    /* Holding GP7 (reset) at power-up brings up the diagnostic screen instead of
-     * the game, so the hardware can still be checked without a rebuild. */
-    diagnosticMode = (0U != (MCP23008_Held() & BTN_RESET));
-
     if (!oledOk)
     {
         printf("No display; running headless. UART output only.\r\n");
     }
-    else if (diagnosticMode)
-    {
-        printf("GP7 held at boot: hardware bring-up screen.\r\n");
-        BRINGUP_Initialize();
-    }
     else
     {
-        GAME_Initialize();
+        MENU_Enter();
     }
 
     ledLastToggle = millis();
@@ -274,15 +277,74 @@ int main(void)
         MCP23008_Tasks();
         POT_Tasks();
 
+        /* Accumulate button press edges here rather than in each game.
+         *
+         * MCP23008_Pressed() clears its latch on read, so only one caller can
+         * have it. Latching centrally lets the shell act on GP7 and still hand
+         * the remaining edges to the active mode. Accumulating also means a press
+         * made between two 20 ms logic ticks is not lost: the bits stay set until
+         * a tick consumes them. */
+        pendingEdges |= MCP23008_Pressed();
+
         if (oledOk)
         {
-            if (diagnosticMode)
+            /* GP7 is global: back to the home menu from wherever we are. */
+            if (0U != (pendingEdges & BTN_RESET))
             {
-                BRINGUP_Tasks();
+                pendingEdges = 0U;
+
+                if (SHELL_MODE_MENU != shellMode)
+                {
+                    shellMode = SHELL_MODE_MENU;
+                    MENU_Enter();
+                    printf("GP7: back to menu\r\n");
+                }
             }
-            else
+
+            switch (shellMode)
             {
-                GAME_Tasks();
+                case SHELL_MODE_MENU:
+                {
+                    menu_item_t choice = MENU_Tasks(&pendingEdges);
+
+                    switch (choice)
+                    {
+                        case MENU_ITEM_DINO:
+                            shellMode = SHELL_MODE_DINO;
+                            GAME_Initialize();
+                            break;
+
+                        case MENU_ITEM_BREAKOUT:
+                            shellMode = SHELL_MODE_BREAKOUT;
+                            BRK_Initialize();
+                            break;
+
+                        case MENU_ITEM_DIAGNOSTIC:
+                            shellMode = SHELL_MODE_DIAGNOSTIC;
+                            BRINGUP_Initialize();
+                            break;
+
+                        case MENU_ITEM_NONE:
+                        default:
+                            /* Still choosing. */
+                            break;
+                    }
+                    break;
+                }
+
+                case SHELL_MODE_DINO:
+                    GAME_Tasks(&pendingEdges);
+                    break;
+
+                case SHELL_MODE_BREAKOUT:
+                    BRK_Tasks(&pendingEdges);
+                    break;
+
+                case SHELL_MODE_DIAGNOSTIC:
+                default:
+                    BRINGUP_Tasks();
+                    pendingEdges = 0U;
+                    break;
             }
         }
 

@@ -16,6 +16,7 @@ foreach(source_file ${TestAi2_default_default_XC8_FILE_TYPE_assemblePreprocess})
 endforeach()
 
 set(TestAi2_default_default_XC8_FILE_TYPE_compile
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../../config.mcc/breakout.c"
     "${CMAKE_CURRENT_SOURCE_DIR}/../../../config.mcc/bringup.c"
     "${CMAKE_CURRENT_SOURCE_DIR}/../../../config.mcc/dino_game.c"
     "${CMAKE_CURRENT_SOURCE_DIR}/../../../config.mcc/gfx_assets.c"
@@ -32,6 +33,7 @@ set(TestAi2_default_default_XC8_FILE_TYPE_compile
     "${CMAKE_CURRENT_SOURCE_DIR}/../../../config.mcc/mcc_generated_files/uart/src/usart1.c"
     "${CMAKE_CURRENT_SOURCE_DIR}/../../../config.mcc/mcc_generated_files/vref/src/vref.c"
     "${CMAKE_CURRENT_SOURCE_DIR}/../../../config.mcc/mcp23008.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../../config.mcc/menu.c"
     "${CMAKE_CURRENT_SOURCE_DIR}/../../../config.mcc/millis.c"
     "${CMAKE_CURRENT_SOURCE_DIR}/../../../config.mcc/pot.c"
     "${CMAKE_CURRENT_SOURCE_DIR}/../../../config.mcc/ssd1306.c")

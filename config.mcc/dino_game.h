@@ -4,7 +4,8 @@
  * @brief Chrome-style endless runner on the SSD1306, MCP23008 buttons and the
  *        PD7 potentiometer.
  *
- * Controls: GP5 jumps, GP6 starts or restarts, GP7 returns to the title screen.
+ * Controls: GP5 jumps, GP6 starts or restarts. GP7 is handled by the shell in
+ * main.c, which returns to the home menu from any game.
  * The potentiometer sets the base scroll speed, so difficulty is adjustable
  * without a rebuild.
  *
@@ -49,7 +50,7 @@ void GAME_Initialize(void);
  * @param None.
  * @return None.
  */
-void GAME_Tasks(void);
+void GAME_Tasks(uint8_t *edges);
 
 /**
  * @brief Returns the current score.

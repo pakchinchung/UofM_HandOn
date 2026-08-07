@@ -336,18 +336,11 @@ static bool GAME_HasCollided(const obstacle_t *obstacle)
             (dinoBottom > obsTop) && (dinoTop < GROUND_Y));
 }
 
-static void GAME_Step(void)
+/* Button edges arrive from the shell rather than being read here, so GP7 can be
+ * handled globally as "return to the menu" without stealing the press from us. */
+static void GAME_Step(uint8_t pressed)
 {
-    uint8_t pressed = MCP23008_Pressed();
     uint8_t i;
-
-    /* GP7 always drops back to the title screen, from any state. */
-    if (0U != (pressed & BTN_RESET))
-    {
-        GAME_Reset();
-        gameState = GAME_STATE_TITLE;
-        return;
-    }
 
     if (GAME_STATE_PLAY != gameState)
     {
@@ -523,7 +516,7 @@ static void GAME_Render(void)
 
         case GAME_STATE_OVER:
             SSD1306_TextDrawCentred(14, "GAME OVER");
-            SSD1306_TextDrawCentred(26, "GP6 RETRY  GP7 TITLE");
+            SSD1306_TextDrawCentred(26, "GP6 RETRY  GP7 MENU");
             GAME_GroundDraw();
             SSD1306_SpriteDraw(DINO_X, DINO_GROUND_Y, &spriteDinoStand);
 
@@ -586,7 +579,7 @@ void GAME_Initialize(void)
 
     GAME_Render();
 
-    printf("Game ready. GP6 start, GP5 jump, GP7 title. Pot sets speed.\r\n");
+    printf("Dino ready. GP6 start, GP5 jump, GP7 menu. Pot sets speed.\r\n");
     printf("Jump: gravity %u, apex target %u px -> impulse %d, "
            "actual rise %u px over %u ticks (%u ms airtime)\r\n",
            (unsigned)GRAVITY, (unsigned)JUMP_APEX_PX, jumpVelocity,
@@ -596,7 +589,7 @@ void GAME_Initialize(void)
                       2U * GAME_TICK_MS));
 }
 
-void GAME_Tasks(void)
+void GAME_Tasks(uint8_t *edges)
 {
     uint32_t now = millis();
 
@@ -607,7 +600,15 @@ void GAME_Tasks(void)
 
         while (((now - lastTick) >= GAME_TICK_MS) && (guard < 4U))
         {
-            GAME_Step();
+            /* Edges are accumulated by the shell between ticks, so a press made
+             * mid-frame is still seen even though the logic runs at 50 Hz. */
+            GAME_Step((NULL != edges) ? *edges : 0U);
+
+            if (NULL != edges)
+            {
+                *edges = 0U;
+            }
+
             lastTick += GAME_TICK_MS;
             guard++;
         }

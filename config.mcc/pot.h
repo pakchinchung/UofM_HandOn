@@ -24,8 +24,9 @@
 extern "C" {
 #endif
 
-/** @brief Interval between conversions, in milliseconds. */
-#define POT_SAMPLE_MS (10U)
+/** @brief Interval between conversions, in milliseconds. Halved from 10 ms so a
+ *         paddle tracks the knob within one 20 ms game tick. */
+#define POT_SAMPLE_MS (5U)
 
 /** @brief Full scale reading of a 12-bit conversion. */
 #define POT_MAX_COUNT (4095U)

@@ -1,0 +1,5 @@
+C:/Users/A76570/MPLABProjects/TestAi2/_build/TestAi2/default/CMakeFiles/TestAi2_default_default_XC8_assemblePreprocess.dir
+C:/Users/A76570/MPLABProjects/TestAi2/_build/TestAi2/default/CMakeFiles/TestAi2_default_default_XC8_compile.dir
+C:/Users/A76570/MPLABProjects/TestAi2/_build/TestAi2/default/CMakeFiles/TestAi2_default_image_dRgdzhGG.dir
+C:/Users/A76570/MPLABProjects/TestAi2/_build/TestAi2/default/CMakeFiles/edit_cache.dir
+C:/Users/A76570/MPLABProjects/TestAi2/_build/TestAi2/default/CMakeFiles/rebuild_cache.dir

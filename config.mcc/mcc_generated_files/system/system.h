@@ -44,8 +44,10 @@ extern "C" {
 #include "config_bits.h"
 #include "../system/pins.h"
 #include "../uart/usart1.h"
+#include "../vref/vref.h"
 #include "../system/interrupt.h"
 #include "../system/clock.h"
+#include "../adc/adc0.h"
 #include "../i2c_host/twi0.h"
 #include "../timer/tca0.h"
 /**

@@ -38,9 +38,11 @@ void SYSTEM_Initialize(void)
 {
     CLOCK_Initialize();
     PIN_MANAGER_Initialize();
+    ADC0_Initialize();
     I2C0_Host_Initialize();
     TCA0_Initialize();
     USART1_Initialize();
+    VREF_Initialize();
     CPUINT_Initialize();
 }
 

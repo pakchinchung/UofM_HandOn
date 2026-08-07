@@ -56,7 +56,7 @@
 #endif
 
 /* Normal Mode, Baud register value */
-#define USART1_BAUD_RATE(BAUD_RATE) ((4000000UL * 64UL / (16UL * (BAUD_RATE))) + 0.5)
+#define USART1_BAUD_RATE(BAUD_RATE) ((24000000UL * 64UL / (16UL * (BAUD_RATE))) + 0.5)
 
 #define UART1_interface UART1
 

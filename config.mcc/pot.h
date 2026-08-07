@@ -3,15 +3,15 @@
  *
  * @brief Potentiometer on PD7 read through ADC0.
  *
- * PD7 is ADC0 analog input AIN7. MCC does not configure the ADC in this
- * project, so this module sets it up directly: VDD reference, CLK_PER/4 for a
- * 1 MHz ADC clock at F_CPU = 4 MHz, 12-bit single-ended conversions, and an
- * extended sample time because a potentiometer wiper is a high impedance
- * source. The digital input buffer on PD7 is disabled to stop it loading the
- * analog input and to save the switching current.
+ * PD7 is ADC0 analog input AIN7, configured by the generated ADC0 and VREF
+ * drivers. This module drives conversions through that driver rather than
+ * touching registers, with three exceptions documented in POT_Initialize()
+ * where the generated settings are wrong for a potentiometer.
  *
- * Results are passed through an exponential moving average so the last couple
- * of ADC bits do not flicker on screen or jitter the game speed.
+ * Conversions are interrupt driven: POT_Tasks() only starts one, and the
+ * ADC0_RESRDY callback folds the result into an exponential moving average. The
+ * main loop therefore never blocks on the ADC, and the last couple of noisy ADC
+ * bits do not flicker on screen or jitter the game speed.
  */
 
 #ifndef POT_H

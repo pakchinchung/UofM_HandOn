@@ -55,14 +55,14 @@ void CLOCK_Initialize(void)
             | (0 << CLKCTRL_XOSC32KS_bp)   // XOSC32KS disabled
             );
     ccp_write_io((void*)&(CLKCTRL.OSCHFCTRLA),(0 << CLKCTRL_AUTOTUNE_bp)   // AUTOTUNE disabled
-            | CLKCTRL_FRQSEL_4M_gc   // FRQSEL 4 MHz system clock (default)
+            | CLKCTRL_FRQSEL_24M_gc   // FRQSEL 24 MHz system clock
             | (0 << CLKCTRL_RUNSTDBY_bp)   // RUNSTDBY disabled
             );
     ccp_write_io((void*)&(CLKCTRL.OSCHFTUNE),0x0   // TUNE 0x0
             );
     ccp_write_io((void*)&(CLKCTRL.OSC32KCTRLA),(0 << CLKCTRL_RUNSTDBY_bp)   // RUNSTDBY disabled
             );
-    ccp_write_io((void*)&(CLKCTRL.PLLCTRLA),CLKCTRL_MULFAC_DISABLE_gc   // MULFAC PLL is disabled
+    ccp_write_io((void*)&(CLKCTRL.PLLCTRLA),CLKCTRL_MULFAC_2x_gc   // MULFAC 2 x multiplication factor
             | (0 << CLKCTRL_RUNSTDBY_bp)   // RUNSTDBY disabled
             | (0 << CLKCTRL_SOURCE_bp)   // SOURCE disabled
             );

@@ -47,6 +47,8 @@ extern const sprite_t spriteDinoRunA;
 extern const sprite_t spriteDinoRunB;
 /** @brief Dinosaur, both feet down. Used while airborne and when dead. 12x16. */
 extern const sprite_t spriteDinoStand;
+/** @brief Tiny cactus, the easiest obstacle to clear. 5x10. */
+extern const sprite_t spriteCactusTiny;
 /** @brief Small single cactus. 7x14. */
 extern const sprite_t spriteCactusSmall;
 /** @brief Large cactus cluster. 11x18. */

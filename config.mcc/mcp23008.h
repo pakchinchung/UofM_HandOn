@@ -23,7 +23,7 @@ extern "C" {
 /** @brief 7-bit I2C address. */
 #define MCP23008_I2C_ADDR  (0x24U)
 /** @brief SCL frequency used for expander traffic. */
-#define MCP23008_I2C_SPEED (I2C_SPEED_STANDARD)
+#define MCP23008_I2C_SPEED_DEFAULT (I2C_SPEED_STANDARD)
 
 /** @brief Interval between GPIO polls, in milliseconds. */
 #define MCP23008_POLL_MS (5U)
@@ -54,6 +54,13 @@ bool MCP23008_Initialize(void);
  * @return None.
  */
 void MCP23008_Tasks(void);
+
+/**
+ * @brief Sets the SCL frequency used for expander traffic.
+ * @param fScl - Desired SCL frequency in hertz.
+ * @return None.
+ */
+void MCP23008_SpeedSet(uint32_t fScl);
 
 /**
  * @brief Returns the debounced button state.

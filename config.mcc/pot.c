@@ -1,7 +1,7 @@
 /*
  * @file pot.c
  *
- * @brief Potentiometer on PD7 read through ADC0.
+ * @brief Potentiometer on PD7 read through the generated ADC0 driver.
  */
 
 #include "pot.h"
@@ -11,75 +11,102 @@
 /* Shift used by the exponential moving average: avg += (sample - avg) >> N. */
 #define POT_FILTER_SHIFT (2U)
 
-/* Guard so a conversion that never completes cannot wedge the main loop. */
-#define POT_CONVERT_TIMEOUT_MS (5U)
+/* CLK_ADC has to land inside 50 kHz..1.5 MHz for a 12-bit conversion, so the
+ * prescaler is derived from F_CPU. MCC emits PRESC_DIV2, which was fine at
+ * 4 MHz but is 12 MHz at F_CPU 24 MHz: eight times over the limit. */
+#define POT_ADC_CLK_MAX (1500000UL)
 
-static uint16_t potAverage = 0;
+#if   ((F_CPU / 2UL) <= POT_ADC_CLK_MAX)
+  #define POT_ADC_PRESC ADC_PRESC_DIV2_gc
+#elif ((F_CPU / 4UL) <= POT_ADC_CLK_MAX)
+  #define POT_ADC_PRESC ADC_PRESC_DIV4_gc
+#elif ((F_CPU / 8UL) <= POT_ADC_CLK_MAX)
+  #define POT_ADC_PRESC ADC_PRESC_DIV8_gc
+#elif ((F_CPU / 12UL) <= POT_ADC_CLK_MAX)
+  #define POT_ADC_PRESC ADC_PRESC_DIV12_gc
+#elif ((F_CPU / 16UL) <= POT_ADC_CLK_MAX)
+  #define POT_ADC_PRESC ADC_PRESC_DIV16_gc
+#elif ((F_CPU / 20UL) <= POT_ADC_CLK_MAX)
+  #define POT_ADC_PRESC ADC_PRESC_DIV20_gc
+#elif ((F_CPU / 24UL) <= POT_ADC_CLK_MAX)
+  #define POT_ADC_PRESC ADC_PRESC_DIV24_gc
+#else
+  #define POT_ADC_PRESC ADC_PRESC_DIV32_gc
+#endif
+
+/* Extra sample cycles. A potentiometer wiper is a high impedance source and
+ * MCC's SAMPLEN of 0 does not give the sample capacitor time to charge, which
+ * shows up as a reading that lags or reads low when the knob is mid travel. */
+#define POT_ADC_SAMPLEN (14U)
+
+/* Written by the conversion-done callback in interrupt context. */
+static volatile uint16_t potAverage = 0;
+static volatile bool potBusy = false;
+
 static uint32_t potLastSample = 0;
 
-/* Runs one blocking conversion. At 1 MHz CLK_ADC with the extended sample
- * length this is roughly 30 us, short enough to just wait for. */
-static bool POT_ConvertBlocking(uint16_t *result)
+/* Runs in ADC0_RESRDY interrupt context. The MCC ISR has already cleared the
+ * flag, so this only has to take the result and fold it into the average. */
+static void POT_ConversionDone(void)
 {
-    uint32_t start = millis();
-    bool done = false;
+    /* adc_result_t is signed; a single-ended 12-bit result is 0..4095. */
+    int16_t sample = (int16_t)ADC0_ConversionResultGet();
+    int16_t delta;
 
-    ADC0.COMMAND = ADC_STCONV_bm;
-
-    while (0U == (ADC0.INTFLAGS & ADC_RESRDY_bm))
+    if (sample < 0)
     {
-        if ((millis() - start) >= POT_CONVERT_TIMEOUT_MS)
-        {
-            break;
-        }
+        sample = 0;
     }
 
-    if (0U != (ADC0.INTFLAGS & ADC_RESRDY_bm))
+    delta = sample - (int16_t)potAverage;
+
+    /* The shift discards the final increments, so snap once inside one step or
+     * the average would never quite reach the endpoints. */
+    if ((delta < (int16_t)(1U << POT_FILTER_SHIFT)) &&
+        (delta > -(int16_t)(1U << POT_FILTER_SHIFT)))
     {
-        *result = ADC0.RES;
-        ADC0.INTFLAGS = ADC_RESRDY_bm;  /* Flag is cleared by writing a one. */
-        done = true;
+        potAverage = (uint16_t)sample;
+    }
+    else
+    {
+        potAverage = (uint16_t)((int16_t)potAverage + (delta >> POT_FILTER_SHIFT));
     }
 
-    return done;
+    potBusy = false;
 }
 
 void POT_Initialize(void)
 {
-    uint16_t sample = 0;
+    /* ADC0_Initialize() and VREF_Initialize() have already run inside
+     * SYSTEM_Initialize(). Three of their settings are wrong for this signal and
+     * are corrected here; the rest of the peripheral is left to MCC. Change them
+     * in the MCC UI and these writes become no-ops.
+     *
+     *   1. PRESC   - MCC emits DIV2, which is 12 MHz CLK_ADC at F_CPU 24 MHz
+     *                against a 1.5 MHz maximum.
+     *   2. SAMPLEN - MCC emits 0, too short for a potentiometer wiper.
+     *   3. ADC0REF - MCC emits the internal 1.024 V reference. The pot divides
+     *                VDD, so everything above 1.024 V would read as full scale.
+     *
+     * Configuration is changed with the ADC disabled, then re-enabled. */
+    ADC0_Disable();
 
-    /* PD7 carries the analog signal, so take the digital input buffer out of
-     * the way. MCC already leaves PORTD as inputs with no pull-ups. */
-    PORTD.PIN7CTRL = PORT_ISC_INPUT_DISABLE_gc;
-
-    /* VDD as the ADC reference. Full scale therefore tracks the supply, which
-     * is what a ratiometric potentiometer divider wants. */
+    ADC0.CTRLC = POT_ADC_PRESC;
+    ADC0.SAMPCTRL = POT_ADC_SAMPLEN;
     VREF.ADC0REF = VREF_REFSEL_VDD_gc;
 
-    /* CLK_ADC = CLK_PER / 4 = 1 MHz at F_CPU 4 MHz, inside the 50 kHz to
-     * 1.5 MHz window the data sheet allows for 12-bit conversions. */
-    ADC0.CTRLC = ADC_PRESC_DIV4_gc;
+    ADC0_Enable();
 
-    /* No result accumulation; one conversion per result. */
-    ADC0.CTRLB = ADC_SAMPNUM_NONE_gc;
+    ADC0_ConversionDoneCallbackRegister(POT_ConversionDone);
+    ADC0_ChannelSelect(ADC0_CHANNEL_AIN7);
 
-    /* Stretch the sample phase. A potentiometer wiper is a high impedance
-     * source and the default 2 cycle sample does not charge the S/H cap. */
-    ADC0.SAMPCTRL = 14U;
+    /* Seed the average with a real reading so the first frame is not a ramp up
+     * from zero. The first conversion after enabling is taken while the
+     * reference is still settling, so it is discarded. */
+    (void)ADC0_ChannelSelectAndConvert(ADC0_CHANNEL_AIN7);
+    potAverage = (uint16_t)ADC0_ChannelSelectAndConvert(ADC0_CHANNEL_AIN7);
 
-    ADC0.MUXPOS = ADC_MUXPOS_AIN7_gc;
-
-    ADC0.CTRLA = ADC_ENABLE_bm | ADC_RESSEL_12BIT_gc;
-
-    /* Throw the first conversion away; it is taken while the reference and the
-     * sample capacitor are still settling. */
-    (void)POT_ConvertBlocking(&sample);
-
-    if (POT_ConvertBlocking(&sample))
-    {
-        potAverage = sample;
-    }
-
+    potBusy = false;
     potLastSample = millis();
 }
 
@@ -87,44 +114,31 @@ void POT_Tasks(void)
 {
     uint32_t now = millis();
 
-    if ((now - potLastSample) >= POT_SAMPLE_MS)
+    /* Fire and forget: the conversion completes in the interrupt, so the main
+     * loop never blocks waiting for the ADC. */
+    if (!potBusy && ((now - potLastSample) >= POT_SAMPLE_MS))
     {
-        uint16_t sample = 0;
-
         potLastSample = now;
-
-        if (POT_ConvertBlocking(&sample))
-        {
-            /* Signed difference so the average can move in both directions. */
-            int16_t delta = (int16_t)sample - (int16_t)potAverage;
-
-            potAverage = (uint16_t)((int16_t)potAverage + (delta >> POT_FILTER_SHIFT));
-
-            /* The shift loses the last increment, so snap the final counts. */
-            if ((delta > 0) && (delta < (int16_t)(1U << POT_FILTER_SHIFT)))
-            {
-                potAverage = sample;
-            }
-            else if ((delta < 0) && (delta > -(int16_t)(1U << POT_FILTER_SHIFT)))
-            {
-                potAverage = sample;
-            }
-            else
-            {
-                /* Average is still converging. */
-            }
-        }
+        potBusy = true;
+        ADC0_ConversionStart();
     }
 }
 
 uint16_t POT_RawGet(void)
 {
-    return potAverage;
+    uint16_t value;
+
+    /* 16-bit read of a value the ADC interrupt can change mid-access. */
+    ENTER_CRITICAL(sreg);
+    value = potAverage;
+    EXIT_CRITICAL(sreg);
+
+    return value;
 }
 
 uint8_t POT_PercentGet(void)
 {
-    return (uint8_t)(((uint32_t)potAverage * 100UL) / POT_MAX_COUNT);
+    return (uint8_t)(((uint32_t)POT_RawGet() * 100UL) / POT_MAX_COUNT);
 }
 
 uint16_t POT_ScaledGet(uint16_t min, uint16_t max)
@@ -135,7 +149,7 @@ uint16_t POT_ScaledGet(uint16_t min, uint16_t max)
     {
         uint32_t span = (uint32_t)(max - min);
 
-        scaled = (uint16_t)(min + (uint16_t)(((uint32_t)potAverage * span) / POT_MAX_COUNT));
+        scaled = (uint16_t)(min + (uint16_t)(((uint32_t)POT_RawGet() * span) / POT_MAX_COUNT));
     }
 
     return scaled;

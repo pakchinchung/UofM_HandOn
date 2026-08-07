@@ -24,7 +24,7 @@ static uint8_t i2cLastError = 0;
  * so the programmed frequency lands at or below the requested one, and the
  * result is clamped at 0 for frequencies F_CPU cannot reach.
  */
-static uint8_t I2C_MBaudCalc(uint32_t fScl)
+uint8_t I2C_MBaudFor(uint32_t fScl)
 {
     uint8_t mbaud = 0;
 
@@ -42,6 +42,57 @@ static uint8_t I2C_MBaudCalc(uint32_t fScl)
     }
 
     return mbaud;
+}
+
+uint32_t I2C_SpeedActualFor(uint32_t fScl)
+{
+    /* Invert the data sheet expression with the MBAUD that will really be used. */
+    uint32_t divisor = 10UL + (2UL * (uint32_t)I2C_MBaudFor(fScl)) + I2C_TRISE_CYCLES;
+
+    return F_CPU / divisor;
+}
+
+uint16_t I2C_SclLowTimeNsFor(uint32_t fScl)
+{
+    /* SCL is held low for 5 + MBAUD peripheral clock cycles.
+     *
+     * Scaled by 1e6 and divided by kHz rather than by 1e9 and divided by Hz:
+     * at MBAUD 114 the latter computes 119 * 1e9 = 1.19e11, which does not fit
+     * in 32 bits and silently wraps. */
+    uint32_t cycles = 5UL + (uint32_t)I2C_MBaudFor(fScl);
+    uint32_t ns = (cycles * 1000000UL) / (F_CPU / 1000UL);
+
+    return (ns > 65535UL) ? 65535U : (uint16_t)ns;
+}
+
+uint16_t I2C_SclLowMinNsFor(uint32_t fScl)
+{
+    uint32_t actual = I2C_SpeedActualFor(fScl);
+    uint16_t minNs;
+
+    /* Minimum SCL low time per the I2C specification, by speed band. */
+    if (actual <= 100000UL)
+    {
+        minNs = 4700U; /* Standard-mode */
+    }
+    else if (actual <= 400000UL)
+    {
+        minNs = 1300U; /* Fast-mode */
+    }
+    else
+    {
+        minNs = 500U;  /* Fast-mode Plus */
+    }
+
+    return minNs;
+}
+
+bool I2C_TimingIsInSpec(uint32_t fScl)
+{
+    /* The TWI peripheral itself tops out at Fast-mode Plus, so anything beyond
+     * 1 MHz is out of spec no matter what the SCL low time works out to. */
+    return ((I2C_SpeedActualFor(fScl) <= I2C_SPEED_FAST_PLUS) &&
+            (I2C_SclLowTimeNsFor(fScl) >= I2C_SclLowMinNsFor(fScl)));
 }
 
 /* Worst-case wall time for a transfer of the given payload, in milliseconds.
@@ -94,11 +145,37 @@ void I2C_SpeedSet(uint32_t fScl)
 {
     if (fScl != i2cCurrentSpeed)
     {
+        bool wantFmPlus = (fScl > I2C_FMPEN_THRESHOLD);
+        bool haveFmPlus = (0U != (TWI0.CTRLA & TWI_FMPEN_bm));
+
         /* MBAUD must only be rewritten while the master is idle. Whatever is in
          * flight belongs to the previous device, so allow a full-size transfer
          * at the old speed to finish before switching. */
         (void)I2C_WaitIdle(I2C_TIMEOUT_MAX_MS);
-        TWI0.MBAUD = I2C_MBaudCalc(fScl);
+
+        TWI0.MBAUD = I2C_MBaudFor(fScl);
+
+        /* FMPEN changes the pad slew rate, and CTRLA is only safe to touch with
+         * the master disabled. Disabling it drops BUSSTATE back to UNKNOWN, so
+         * the bus has to be forced idle again afterwards or no transfer will
+         * ever start. Read-modify-write to preserve SDAHOLD and INPUTLVL. */
+        if (wantFmPlus != haveFmPlus)
+        {
+            TWI0.MCTRLA &= (uint8_t)~TWI_ENABLE_bm;
+
+            if (wantFmPlus)
+            {
+                TWI0.CTRLA |= TWI_FMPEN_bm;
+            }
+            else
+            {
+                TWI0.CTRLA &= (uint8_t)~TWI_FMPEN_bm;
+            }
+
+            TWI0.MCTRLA |= TWI_ENABLE_bm;
+            TWI0.MSTATUS = TWI_BUSSTATE_IDLE_gc;
+        }
+
         i2cCurrentSpeed = fScl;
     }
 }

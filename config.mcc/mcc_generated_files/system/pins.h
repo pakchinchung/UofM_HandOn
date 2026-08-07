@@ -38,6 +38,25 @@
 #include <avr/io.h>
 #include "./port.h"
 
+//get/set IO_PD7 aliases
+#define IO_PD7_SetHigh() do { PORTD_OUTSET = 0x80; } while(0)
+#define IO_PD7_SetLow() do { PORTD_OUTCLR = 0x80; } while(0)
+#define IO_PD7_Toggle() do { PORTD_OUTTGL = 0x80; } while(0)
+#define IO_PD7_GetValue() (VPORTD.IN & (0x1 << 7))
+#define IO_PD7_SetDigitalInput() do { PORTD_DIRCLR = 0x80; } while(0)
+#define IO_PD7_SetDigitalOutput() do { PORTD_DIRSET = 0x80; } while(0)
+#define IO_PD7_SetPullUp() do { PORTD_PIN7CTRL  |= PORT_PULLUPEN_bm; } while(0)
+#define IO_PD7_ResetPullUp() do { PORTD_PIN7CTRL  &= ~PORT_PULLUPEN_bm; } while(0)
+#define IO_PD7_SetInverted() do { PORTD_PIN7CTRL  |= PORT_INVEN_bm; } while(0)
+#define IO_PD7_ResetInverted() do { PORTD_PIN7CTRL  &= ~PORT_INVEN_bm; } while(0)
+#define IO_PD7_DisableInterruptOnChange() do { PORTD.PIN7CTRL = (PORTD.PIN7CTRL & ~PORT_ISC_gm) | 0x0 ; } while(0)
+#define IO_PD7_EnableInterruptForBothEdges() do { PORTD.PIN7CTRL = (PORTD.PIN7CTRL & ~PORT_ISC_gm) | 0x1 ; } while(0)
+#define IO_PD7_EnableInterruptForRisingEdge() do { PORTD.PIN7CTRL = (PORTD.PIN7CTRL & ~PORT_ISC_gm) | 0x2 ; } while(0)
+#define IO_PD7_EnableInterruptForFallingEdge() do { PORTD.PIN7CTRL = (PORTD.PIN7CTRL & ~PORT_ISC_gm) | 0x3 ; } while(0)
+#define IO_PD7_DisableDigitalInputBuffer() do { PORTD.PIN7CTRL = (PORTD.PIN7CTRL & ~PORT_ISC_gm) | 0x4 ; } while(0)
+#define IO_PD7_EnableInterruptForLowLevelSensing() do { PORTD.PIN7CTRL = (PORTD.PIN7CTRL & ~PORT_ISC_gm) | 0x5 ; } while(0)
+#define PD7_SetInterruptHandler IO_PD7_SetInterruptHandler
+
 //get/set IO_PC1 aliases
 #define IO_PC1_SetHigh() do { PORTC_OUTSET = 0x2; } while(0)
 #define IO_PC1_SetLow() do { PORTC_OUTCLR = 0x2; } while(0)
@@ -140,6 +159,27 @@
  * @return none
  */
 void PIN_MANAGER_Initialize();
+
+/**
+ * @ingroup  pinsdriver
+ * @brief Default Interrupt Handler for IO_PD7 pin. 
+ *        This is a predefined interrupt handler to be used together with the IO_PD7_SetInterruptHandler() method.
+ *        This handler is called every time the IO_PD7 ISR is executed. 
+ * @pre PIN_MANAGER_Initialize() has been called at least once
+ * @param none
+ * @return none
+ */
+void IO_PD7_DefaultInterruptHandler(void);
+
+/**
+ * @ingroup  pinsdriver
+ * @brief Interrupt Handler Setter for IO_PD7 pin input-sense-config functionality.
+ *        Allows selecting an interrupt handler for IO_PD7 at application runtime
+ * @pre PIN_MANAGER_Initialize() has been called at least once
+ * @param InterruptHandler function pointer.
+ * @return none
+ */
+void IO_PD7_SetInterruptHandler(void (* interruptHandler)(void)) ; 
 
 /**
  * @ingroup  pinsdriver

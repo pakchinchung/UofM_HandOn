@@ -50,7 +50,7 @@
  * @ingroup timerdriver
  * @brief Defines the timer prescaled clock frequency in hertz.
  */
-#define TCA0_CLOCK_FREQ (4000000UL)
+#define TCA0_CLOCK_FREQ (24000000UL)
 
 
 /**

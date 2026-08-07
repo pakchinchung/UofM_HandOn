@@ -32,8 +32,23 @@ extern "C" {
 
 /** @brief Standard mode, 100 kHz. */
 #define I2C_SPEED_STANDARD (100000UL)
-/** @brief Fast mode, 400 kHz. Clamped by F_CPU, see the file header. */
+/** @brief Fast mode, 400 kHz. Clamped by F_CPU, see below. */
 #define I2C_SPEED_FAST     (400000UL)
+/** @brief Fast mode plus, 1 MHz. Needs FMPEN and F_CPU >= 10 MHz. */
+#define I2C_SPEED_FAST_PLUS (1000000UL)
+
+/**
+ * @brief Hard SCL ceiling for the current F_CPU.
+ *
+ * f_SCL = F_CPU / (10 + 2 * MBAUD + F_CPU * T_rise). The divisor cannot go
+ * below 10, so no MBAUD value reaches beyond F_CPU / 10 no matter what is
+ * requested. At F_CPU = 4 MHz that is 400 kHz; 800 kHz needs F_CPU >= 8 MHz and
+ * 1 MHz needs >= 10 MHz. The TWI peripheral itself supports Fm+.
+ */
+#define I2C_SPEED_CEILING (F_CPU / 10UL)
+
+/** @brief Requests above this switch the pad drivers into Fast-mode-plus. */
+#define I2C_FMPEN_THRESHOLD (400000UL)
 
 /** @brief Bus rise time assumption used for the baud calculation, in ns. */
 #define I2C_TRISE_NS (100UL)
@@ -47,6 +62,47 @@ extern "C" {
 #define I2C_TIMEOUT_MARGIN_MS (10UL)
 /** @brief Upper bound, so a genuinely stuck bus cannot spin indefinitely. */
 #define I2C_TIMEOUT_MAX_MS    (600UL)
+
+/**
+ * @brief Returns the MBAUD value that would be programmed for a frequency.
+ *        Exposed so callers can report the real bus setup rather than the
+ *        request, since MBAUD is an integer and clamps at 0.
+ * @param fScl - Desired SCL frequency in hertz.
+ * @return MBAUD register value.
+ */
+uint8_t I2C_MBaudFor(uint32_t fScl);
+
+/**
+ * @brief Returns the SCL frequency that a request actually resolves to.
+ * @param fScl - Desired SCL frequency in hertz.
+ * @return Achieved frequency in hertz, always <= the request.
+ */
+uint32_t I2C_SpeedActualFor(uint32_t fScl);
+
+/**
+ * @brief Returns the SCL low time for a request, in nanoseconds.
+ * @param fScl - Desired SCL frequency in hertz.
+ * @return SCL low time in nanoseconds.
+ */
+uint16_t I2C_SclLowTimeNsFor(uint32_t fScl);
+
+/**
+ * @brief Returns the minimum SCL low time the I2C spec allows at a frequency:
+ *        4700 ns up to 100 kHz, 1300 ns up to 400 kHz, 500 ns up to 1 MHz.
+ * @param fScl - Desired SCL frequency in hertz.
+ * @return Minimum permitted SCL low time in nanoseconds.
+ */
+uint16_t I2C_SclLowMinNsFor(uint32_t fScl);
+
+/**
+ * @brief Reports whether a request produces bus timing inside the I2C spec.
+ *        A rung can work on the bench and still fail this; prefer one that
+ *        passes so behaviour does not depend on temperature or a swapped part.
+ * @param fScl - Desired SCL frequency in hertz.
+ * @retval true if both the SCL low time and the frequency band are legal
+ * @retval false otherwise
+ */
+bool I2C_TimingIsInSpec(uint32_t fScl);
 
 /**
  * @brief Programs the TWI0 baud register for the requested SCL frequency.

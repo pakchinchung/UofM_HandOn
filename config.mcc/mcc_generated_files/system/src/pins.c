@@ -34,6 +34,7 @@
 
 #include "../pins.h"
 
+static void (*IO_PD7_InterruptHandler)(void);
 static void (*IO_PC1_InterruptHandler)(void);
 static void (*IO_PC0_InterruptHandler)(void);
 static void (*IO_PC3_InterruptHandler)(void);
@@ -123,6 +124,7 @@ void PIN_MANAGER_Initialize()
     PORTMUX.ZCDROUTEA = 0x0;
 
   // register default ISC callback functions at runtime; use these methods to register a custom function
+    IO_PD7_SetInterruptHandler(IO_PD7_DefaultInterruptHandler);
     IO_PC1_SetInterruptHandler(IO_PC1_DefaultInterruptHandler);
     IO_PC0_SetInterruptHandler(IO_PC0_DefaultInterruptHandler);
     IO_PC3_SetInterruptHandler(IO_PC3_DefaultInterruptHandler);
@@ -130,6 +132,19 @@ void PIN_MANAGER_Initialize()
     IO_PC6_SetInterruptHandler(IO_PC6_DefaultInterruptHandler);
 }
 
+/**
+  Allows selecting an interrupt handler for IO_PD7 at application runtime
+*/
+void IO_PD7_SetInterruptHandler(void (* interruptHandler)(void)) 
+{
+    IO_PD7_InterruptHandler = interruptHandler;
+}
+
+void IO_PD7_DefaultInterruptHandler(void)
+{
+    // add your IO_PD7 interrupt custom code
+    // or set custom function using IO_PD7_SetInterruptHandler()
+}
 /**
   Allows selecting an interrupt handler for IO_PC1 at application runtime
 */
@@ -236,6 +251,11 @@ ISR(PORTC_PORT_vect)
 
 ISR(PORTD_PORT_vect)
 { 
+    // Call the interrupt handler for the callback registered at runtime
+    if(VPORTD.INTFLAGS & PORT_INT7_bm)
+    {
+       IO_PD7_InterruptHandler(); 
+    }
     /* Clear interrupt flags */
     VPORTD.INTFLAGS = 0xff;
 }

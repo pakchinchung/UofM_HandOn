@@ -50,7 +50,9 @@
                 "config.mcc/bringup.c",
                 "config.mcc/mcc_generated_files/system/src/pins.c",
                 "config.mcc/mcc_generated_files/uart/src/usart1.c",
-                "config.mcc/mcc_generated_files/timer/src/tca0.c"
+                "config.mcc/mcc_generated_files/timer/src/tca0.c",
+                "config.mcc/mcc_generated_files/adc/src/adc0.c",
+                "config.mcc/mcc_generated_files/vref/src/vref.c"
             ]
         }
     ]

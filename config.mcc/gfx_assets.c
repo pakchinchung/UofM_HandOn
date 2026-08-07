@@ -139,6 +139,20 @@ static const uint16_t dinoStandRows[16] =
     0x370, /* ..##.###.... */
 };
 
+static const uint16_t cactusTinyRows[10] =
+{
+    0x04, /* ..#.. */
+    0x04, /* ..#.. */
+    0x0C, /* .##.. */
+    0x0E, /* .###. */
+    0x0E, /* .###. */
+    0x04, /* ..#.. */
+    0x04, /* ..#.. */
+    0x04, /* ..#.. */
+    0x04, /* ..#.. */
+    0x04, /* ..#.. */
+};
+
 static const uint16_t cactusSmallRows[14] =
 {
     0x08, /* ...#... */
@@ -182,5 +196,6 @@ static const uint16_t cactusLargeRows[18] =
 const sprite_t spriteDinoRunA    = { 12U, 16U, dinoRunARows };
 const sprite_t spriteDinoRunB    = { 12U, 16U, dinoRunBRows };
 const sprite_t spriteDinoStand   = { 12U, 16U, dinoStandRows };
+const sprite_t spriteCactusTiny  = {  5U, 10U, cactusTinyRows };
 const sprite_t spriteCactusSmall = {  7U, 14U, cactusSmallRows };
 const sprite_t spriteCactusLarge = { 11U, 18U, cactusLargeRows };

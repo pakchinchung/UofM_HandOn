@@ -17,9 +17,11 @@ endforeach()
 
 set(TestAi2_default_default_XC8_FILE_TYPE_compile
     "${CMAKE_CURRENT_SOURCE_DIR}/../../../config.mcc/bringup.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../../config.mcc/dino_game.c"
     "${CMAKE_CURRENT_SOURCE_DIR}/../../../config.mcc/gfx_assets.c"
     "${CMAKE_CURRENT_SOURCE_DIR}/../../../config.mcc/i2c_bus.c"
     "${CMAKE_CURRENT_SOURCE_DIR}/../../../config.mcc/main.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../../config.mcc/mcc_generated_files/adc/src/adc0.c"
     "${CMAKE_CURRENT_SOURCE_DIR}/../../../config.mcc/mcc_generated_files/i2c_host/src/twi0.c"
     "${CMAKE_CURRENT_SOURCE_DIR}/../../../config.mcc/mcc_generated_files/system/src/clock.c"
     "${CMAKE_CURRENT_SOURCE_DIR}/../../../config.mcc/mcc_generated_files/system/src/config_bits.c"
@@ -28,6 +30,7 @@ set(TestAi2_default_default_XC8_FILE_TYPE_compile
     "${CMAKE_CURRENT_SOURCE_DIR}/../../../config.mcc/mcc_generated_files/system/src/system.c"
     "${CMAKE_CURRENT_SOURCE_DIR}/../../../config.mcc/mcc_generated_files/timer/src/tca0.c"
     "${CMAKE_CURRENT_SOURCE_DIR}/../../../config.mcc/mcc_generated_files/uart/src/usart1.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../../config.mcc/mcc_generated_files/vref/src/vref.c"
     "${CMAKE_CURRENT_SOURCE_DIR}/../../../config.mcc/mcp23008.c"
     "${CMAKE_CURRENT_SOURCE_DIR}/../../../config.mcc/millis.c"
     "${CMAKE_CURRENT_SOURCE_DIR}/../../../config.mcc/pot.c"

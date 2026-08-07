@@ -2,14 +2,14 @@
 
 manifest_file_version: 1.0.0
 project: N/A
-creation_date: 2026-08-07T09:11:38.076+08:00[Asia/Singapore]
+creation_date: 2026-08-07T19:49:29.266+08:00[Asia/Singapore]
 operating_system: Windows 11
 mcc_mode: VSCodePlugin
 mcc_mode_version: Unknown
 device_name: AVR128DA48
 compiler: N/A
-mcc_version: 5.7.0
-mcc_core_version: 5.9.0
+mcc_version: 5.7.1
+mcc_core_version: 5.9.1
 content_manager_version: 7.0.0
 is_mcc_offline: false
 is_using_prerelease_versions: false
@@ -23,10 +23,12 @@ modules:
 - {name: '@mchp-mcc/i2c-host-driver', type: MELODY, version: 1.0.5}
 - {name: '@mchp-mcc/main-manager', type: MELODY, version: 3.1.2}
 - {name: '@mchp-mcc/pin-content-processor', type: MELODY, version: 3.11.0}
+- {name: '@mchp-mcc/scf-avr8-adc-v1', type: MELODY, version: 5.0.0}
 - {name: '@mchp-mcc/scf-avr8-clkctrl-v1', type: MELODY, version: 5.3.6}
 - {name: '@mchp-mcc/scf-avr8-interrupt-v1', type: MELODY, version: 5.0.12}
 - {name: '@mchp-mcc/scf-avr8-tca-v1', type: MELODY, version: 7.1.0}
 - {name: '@mchp-mcc/scf-avr8-twi-v1', type: MELODY, version: 8.2.1}
 - {name: '@mchp-mcc/scf-avr8-usart-v1', type: MELODY, version: 10.3.1}
+- {name: '@mchp-mcc/scf-avr8-vref-v1', type: MELODY, version: 4.1.1}
 - {name: '@mchp-mcc/timer', type: MELODY, version: 1.2.4}
 - {name: '@mchp-mcc/uart-driver', type: MELODY, version: 1.10.3}

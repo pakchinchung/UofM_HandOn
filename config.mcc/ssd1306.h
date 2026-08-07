@@ -30,8 +30,8 @@ extern "C" {
 
 /** @brief 7-bit I2C address. 0x3D is the SA0-high variant, 0x3C is SA0-low. */
 #define SSD1306_I2C_ADDR  (0x3DU)
-/** @brief SCL frequency used for display traffic. */
-#define SSD1306_I2C_SPEED (I2C_SPEED_STANDARD)
+/** @brief Default SCL frequency for display traffic, overridable at runtime. */
+#define SSD1306_I2C_SPEED_DEFAULT (I2C_SPEED_STANDARD)
 
 /** @brief Pixel operations accepted by the drawing primitives. */
 typedef enum
@@ -48,6 +48,30 @@ typedef enum
  * @retval false if the panel did not respond
  */
 bool SSD1306_Initialize(void);
+
+/**
+ * @brief Sets the SCL frequency used for all display traffic.
+ *        Only affects this device; everything else on the bus keeps its own
+ *        speed because each transfer reprograms MBAUD as needed.
+ * @param fScl - Desired SCL frequency in hertz.
+ * @return None.
+ */
+void SSD1306_SpeedSet(uint32_t fScl);
+
+/**
+ * @brief Returns the SCL frequency currently used for display traffic.
+ * @param None.
+ * @return Frequency in hertz.
+ */
+uint32_t SSD1306_SpeedGet(void);
+
+/**
+ * @brief Marks every page dirty so the next update pushes a full frame.
+ *        Used to benchmark a worst-case transfer.
+ * @param None.
+ * @return None.
+ */
+void SSD1306_DirtyAll(void);
 
 /**
  * @brief Returns which step of the init sequence failed, for diagnostics.

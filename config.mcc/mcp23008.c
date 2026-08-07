@@ -23,18 +23,22 @@ static uint8_t mcpReleasedLatch = 0;
 static uint32_t mcpLastPoll = 0;
 static bool mcpOnline = false;
 
+/* Runtime settable so this device keeps its own bus speed independently of the
+ * display, which is the whole point of the per-transfer speed in i2c_bus. */
+static uint32_t mcpSpeed = MCP23008_I2C_SPEED_DEFAULT;
+
 static bool MCP23008_RegWrite(uint8_t reg, uint8_t value)
 {
     uint8_t packet[2] = { reg, value };
 
-    return I2C_Write(MCP23008_I2C_SPEED, MCP23008_I2C_ADDR, packet, sizeof(packet));
+    return I2C_Write(mcpSpeed, MCP23008_I2C_ADDR, packet, sizeof(packet));
 }
 
 static bool MCP23008_RegRead(uint8_t reg, uint8_t *value)
 {
     uint8_t index = reg;
 
-    return I2C_WriteRead(MCP23008_I2C_SPEED, MCP23008_I2C_ADDR,
+    return I2C_WriteRead(mcpSpeed, MCP23008_I2C_ADDR,
                          &index, 1U, value, 1U);
 }
 
@@ -135,6 +139,11 @@ void MCP23008_Tasks(void)
             mcpOnline = false;
         }
     }
+}
+
+void MCP23008_SpeedSet(uint32_t fScl)
+{
+    mcpSpeed = fScl;
 }
 
 uint8_t MCP23008_Held(void)

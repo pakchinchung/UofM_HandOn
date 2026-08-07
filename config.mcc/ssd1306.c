@@ -43,6 +43,10 @@ static uint8_t ssd1306Buffer[1U + SSD1306_FB_BYTES];
 /* Bit n set means page n differs from what the panel is showing. */
 static uint8_t ssd1306DirtyPages = 0;
 
+/* Held rather than hard coded so the boot sweep can find the fastest rung this
+ * board's bus capacitance and pull-ups actually tolerate. */
+static uint32_t ssd1306Speed = SSD1306_I2C_SPEED_DEFAULT;
+
 /* Pixel data starts one byte in. Index as fb[page * WIDTH + column]. */
 #define FB (&ssd1306Buffer[1])
 
@@ -69,7 +73,7 @@ static bool SSD1306_CommandSend(const uint8_t *cmd, uint8_t length)
     {
         packet[0] = SSD1306_CTRL_CMD;
         (void)memcpy(&packet[1], cmd, length);
-        success = I2C_Write(SSD1306_I2C_SPEED, SSD1306_I2C_ADDR, packet, (size_t)length + 1U);
+        success = I2C_Write(ssd1306Speed, SSD1306_I2C_ADDR, packet, (size_t)length + 1U);
     }
 
     return success;
@@ -184,6 +188,21 @@ bool SSD1306_Initialize(void)
     return ok;
 }
 
+void SSD1306_SpeedSet(uint32_t fScl)
+{
+    ssd1306Speed = fScl;
+}
+
+uint32_t SSD1306_SpeedGet(void)
+{
+    return ssd1306Speed;
+}
+
+void SSD1306_DirtyAll(void)
+{
+    ssd1306DirtyPages = 0xFFU;
+}
+
 uint8_t SSD1306_InitFailStepGet(void)
 {
     return ssd1306InitFailStep;
@@ -261,7 +280,7 @@ bool SSD1306_Update(void)
             uint8_t saved = *packet;
 
             *packet = SSD1306_CTRL_DATA;
-            ok = I2C_Write(SSD1306_I2C_SPEED, SSD1306_I2C_ADDR,
+            ok = I2C_Write(ssd1306Speed, SSD1306_I2C_ADDR,
                            packet, (size_t)runBytes + 1U) && ok;
             *packet = saved;
         }
@@ -306,48 +325,155 @@ void SSD1306_PixelDraw(int16_t x, int16_t y, ssd1306_ink_t ink)
     }
 }
 
+/* Applies an 8-pixel column mask to a single page byte. This is the one place
+ * that touches the frame buffer for bulk drawing: everything below reduces to
+ * whole-byte operations so a filled span costs one operation per 8 pixels
+ * instead of one function call per pixel. */
+static void SSD1306_MaskApply(uint8_t page, int16_t x, uint8_t mask, ssd1306_ink_t ink)
+{
+    if ((0U != mask) && (x >= 0) && (x < (int16_t)SSD1306_WIDTH) && (page < SSD1306_PAGES))
+    {
+        uint8_t *cell = &FB[((uint16_t)page * SSD1306_WIDTH) + (uint16_t)x];
+
+        switch (ink)
+        {
+            case SSD1306_PIXEL_CLEAR:
+                *cell &= (uint8_t)~mask;
+                break;
+
+            case SSD1306_PIXEL_XOR:
+                *cell ^= mask;
+                break;
+
+            case SSD1306_PIXEL_SET:
+            default:
+                *cell |= mask;
+                break;
+        }
+
+        ssd1306DirtyPages |= (uint8_t)(1U << page);
+    }
+}
+
+/* Vertical run of pixels in one column, clipped, split across pages. */
+static void SSD1306_VSpanDraw(int16_t x, int16_t y, uint8_t height, ssd1306_ink_t ink)
+{
+    int16_t top = y;
+    int16_t bottom = y + (int16_t)height - 1;
+
+    if ((0U != height) && (bottom >= 0) && (top < (int16_t)SSD1306_HEIGHT))
+    {
+        uint8_t firstPage;
+        uint8_t lastPage;
+        uint8_t page;
+
+        if (top < 0)
+        {
+            top = 0;
+        }
+        if (bottom >= (int16_t)SSD1306_HEIGHT)
+        {
+            bottom = (int16_t)SSD1306_HEIGHT - 1;
+        }
+
+        firstPage = (uint8_t)((uint16_t)top >> 3);
+        lastPage = (uint8_t)((uint16_t)bottom >> 3);
+
+        for (page = firstPage; page <= lastPage; page++)
+        {
+            /* Partial mask on the first and last page, solid 0xFF between. */
+            uint8_t high = (page == firstPage) ? (uint8_t)((uint16_t)top & 7U) : 0U;
+            uint8_t low = (page == lastPage) ? (uint8_t)((uint16_t)bottom & 7U) : 7U;
+            uint8_t mask = (uint8_t)((uint8_t)(0xFFU << high) & (uint8_t)(0xFFU >> (7U - low)));
+
+            SSD1306_MaskApply(page, x, mask, ink);
+        }
+    }
+}
+
 void SSD1306_HLineDraw(int16_t x, int16_t y, uint8_t width, ssd1306_ink_t ink)
 {
-    uint8_t i;
-
-    for (i = 0; i < width; i++)
+    if ((y >= 0) && (y < (int16_t)SSD1306_HEIGHT))
     {
-        SSD1306_PixelDraw(x + (int16_t)i, y, ink);
+        uint8_t page = (uint8_t)((uint16_t)y >> 3);
+        uint8_t mask = (uint8_t)(1U << ((uint16_t)y & 7U));
+        uint8_t i;
+
+        for (i = 0; i < width; i++)
+        {
+            SSD1306_MaskApply(page, x + (int16_t)i, mask, ink);
+        }
     }
 }
 
 void SSD1306_RectFill(int16_t x, int16_t y, uint8_t width, uint8_t height, ssd1306_ink_t ink)
 {
-    uint8_t row;
+    uint8_t i;
 
-    for (row = 0; row < height; row++)
+    /* Column at a time: a 5 pixel tall fill is one byte operation per column
+     * rather than five pixel calls. */
+    for (i = 0; i < width; i++)
     {
-        SSD1306_HLineDraw(x, y + (int16_t)row, width, ink);
+        SSD1306_VSpanDraw(x + (int16_t)i, y, height, ink);
     }
 }
 
 void SSD1306_SpriteDraw(int16_t x, int16_t y, const sprite_t *sprite)
 {
-    if ((NULL != sprite) && (NULL != sprite->rows))
+    if ((NULL != sprite) && (NULL != sprite->rows) && (sprite->height <= 32U))
     {
-        uint8_t row;
+        uint8_t col;
 
-        for (row = 0; row < sprite->height; row++)
+        /* Sprites are authored row-major because that keeps the art readable in
+         * gfx_assets.c, but the panel is column-major. Transpose one column at a
+         * time into a 32-bit accumulator, then emit it as whole page bytes. The
+         * bit tests are a few cycles each, far cheaper than a pixel call per
+         * lit pixel. */
+        for (col = 0; col < sprite->width; col++)
         {
-            uint16_t bits = sprite->rows[row];
-            uint8_t col;
+            uint16_t rowMask = (uint16_t)1U << ((sprite->width - 1U) - col);
+            uint32_t column = 0;
+            uint8_t row;
 
-            /* Nothing to plot on a blank row, and most sprite rows are sparse. */
-            if (0U != bits)
+            for (row = 0; row < sprite->height; row++)
             {
-                for (col = 0; col < sprite->width; col++)
+                if (0U != (sprite->rows[row] & rowMask))
                 {
-                    uint16_t mask = (uint16_t)1U << ((sprite->width - 1U) - col);
+                    column |= ((uint32_t)1UL << row);
+                }
+            }
 
-                    if (0U != (bits & mask))
+            if (0UL != column)
+            {
+                int16_t cx = x + (int16_t)col;
+                int16_t topY = y;
+
+                /* Emit the column in page-sized slices. The first slice may
+                 * start part way down a page, so it is shifted into place. */
+                while (0UL != column)
+                {
+                    uint8_t shift = (uint8_t)((uint16_t)topY & 7U);
+                    uint8_t page = (uint8_t)((uint16_t)topY >> 3);
+                    uint8_t chunk = (uint8_t)(column & 0xFFUL);
+
+                    if (0U != shift)
                     {
-                        SSD1306_PixelDraw(x + (int16_t)col, y + (int16_t)row,
+                        /* Straddles two pages: low part here, rest next loop. */
+                        SSD1306_MaskApply(page, cx, (uint8_t)(chunk << shift),
                                           SSD1306_PIXEL_SET);
+                        column >>= (8U - shift);
+                        topY += (int16_t)(8U - shift);
+                    }
+                    else
+                    {
+                        SSD1306_MaskApply(page, cx, chunk, SSD1306_PIXEL_SET);
+                        column >>= 8;
+                        topY += 8;
+                    }
+
+                    if (topY >= (int16_t)SSD1306_HEIGHT)
+                    {
+                        break;
                     }
                 }
             }
@@ -382,6 +508,12 @@ int16_t SSD1306_TextDraw(int16_t x, int16_t y, const char *text)
     {
         const char *p = text;
 
+        /* The font is already stored column-major with bit 0 at the top, which
+         * is the panel's own layout. Each glyph column is therefore one shift
+         * and one or two byte writes: no per-pixel work at all. */
+        uint8_t shift = (uint8_t)((uint16_t)y & 7U);
+        uint8_t page = (uint8_t)((uint16_t)y >> 3);
+
         while ('\0' != *p)
         {
             const uint8_t *glyph = &font5x7[(uint16_t)SSD1306_GlyphIndex(*p) * FONT_WIDTH];
@@ -390,13 +522,18 @@ int16_t SSD1306_TextDraw(int16_t x, int16_t y, const char *text)
             for (col = 0; col < FONT_WIDTH; col++)
             {
                 uint8_t bits = glyph[col];
-                uint8_t bit;
 
-                for (bit = 0; bit < FONT_HEIGHT; bit++)
+                if (0U != bits)
                 {
-                    if (0U != (bits & (uint8_t)(1U << bit)))
+                    SSD1306_MaskApply(page, cursor + (int16_t)col,
+                                      (uint8_t)(bits << shift), SSD1306_PIXEL_SET);
+
+                    /* A 7 pixel glyph at a non-zero offset spills into the next
+                     * page. Guarded so a page-aligned row skips the write. */
+                    if (0U != shift)
                     {
-                        SSD1306_PixelDraw(cursor + (int16_t)col, y + (int16_t)bit,
+                        SSD1306_MaskApply(page + 1U, cursor + (int16_t)col,
+                                          (uint8_t)(bits >> (8U - shift)),
                                           SSD1306_PIXEL_SET);
                     }
                 }

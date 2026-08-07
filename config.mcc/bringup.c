@@ -11,9 +11,9 @@
 #include "pot.h"
 #include "millis.h"
 
-/* Target frame interval. 25 ms is about as fast as the OLED can be refreshed
- * over a 385 kHz bus once the dirty page tracking has trimmed the payload. */
-#define BRINGUP_FRAME_MS (25U)
+/* Minimum frame interval. Set well below what the hardware can sustain so the
+ * reported FPS measures the real ceiling rather than this limiter. */
+#define BRINGUP_FRAME_MS (5U)
 
 /* Screen layout. Rows are chosen so each block of text sits inside as few
  * 8-pixel pages as possible, which keeps the dirty page count down. */

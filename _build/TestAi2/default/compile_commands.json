@@ -58,5 +58,11 @@
   "command": "c:\\PROGRA~1\\MICROC~1\\xc8\\v3.10\\bin\\xc8-cc.exe -DXPRJ_default=default -D__AVR128DA48__ -c -mcpu=AVR128DA48 -x c -mdfp=C:/Users/A76570/.mchp_packs/Microchip/AVR-Dx_DFP/2.8.343/xc8 -Wl,--gc-sections -O0 -ffunction-sections -fdata-sections -fshort-enums -funsigned-char -funsigned-bitfields -Wall -gdwarf-3 -mno-const-data-in-progmem -o CMakeFiles\\TestAi2_default_default_XC8_compile.dir\\C_\\Users\\A76570\\MPLABProjects\\TestAi2\\config.mcc\\mcc_generated_files\\uart\\src\\usart1.c.o -c C:\\Users\\A76570\\MPLABProjects\\TestAi2\\config.mcc\\mcc_generated_files\\uart\\src\\usart1.c",
   "file": "C:/Users/A76570/MPLABProjects/TestAi2/config.mcc/mcc_generated_files/uart/src/usart1.c",
   "output": "C:/Users/A76570/MPLABProjects/TestAi2/_build/TestAi2/default/CMakeFiles/TestAi2_default_default_XC8_compile.dir/C_/Users/A76570/MPLABProjects/TestAi2/config.mcc/mcc_generated_files/uart/src/usart1.c.o"
+},
+{
+  "directory": "C:/Users/A76570/MPLABProjects/TestAi2/_build/TestAi2/default",
+  "command": "c:\\PROGRA~1\\MICROC~1\\xc8\\v3.10\\bin\\xc8-cc.exe -DXPRJ_default=default -D__AVR128DA48__ -c -mcpu=AVR128DA48 -x c -mdfp=C:/Users/A76570/.mchp_packs/Microchip/AVR-Dx_DFP/2.8.343/xc8 -Wl,--gc-sections -O0 -ffunction-sections -fdata-sections -fshort-enums -funsigned-char -funsigned-bitfields -Wall -gdwarf-3 -mno-const-data-in-progmem -o CMakeFiles\\TestAi2_default_default_XC8_compile.dir\\C_\\Users\\A76570\\MPLABProjects\\TestAi2\\config.mcc\\millis.c.o -c C:\\Users\\A76570\\MPLABProjects\\TestAi2\\config.mcc\\millis.c",
+  "file": "C:/Users/A76570/MPLABProjects/TestAi2/config.mcc/millis.c",
+  "output": "C:/Users/A76570/MPLABProjects/TestAi2/_build/TestAi2/default/CMakeFiles/TestAi2_default_default_XC8_compile.dir/C_/Users/A76570/MPLABProjects/TestAi2/config.mcc/millis.c.o"
 }
 ]

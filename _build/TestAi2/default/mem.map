@@ -1,0 +1,1677 @@
+Archive member included to satisfy reference by file (symbol)
+
+c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_copy_data.o)
+                              CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\main.c.o (__do_copy_data)
+c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_muluhisi3.o)
+                              CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\millis.c.o (__muluhisi3)
+c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_umulhisi3.o)
+                              c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_muluhisi3.o) (__umulhisi3)
+c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(exit.o)
+                              C:/Users/A76570/.mchp_packs/Microchip/AVR-Dx_DFP/2.8.343/xc8/avr/lib/avrxmega4/crtavr128da48.o (exit)
+c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__sio_printf_doux.o)
+                              CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\main.c.o (_printf_cdopuxX)
+c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__fmt_d.o)
+                              c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__sio_printf_doux.o) (__fmt_d_needed)
+c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__fmt_o.o)
+                              c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__sio_printf_doux.o) (__fmt_o_needed)
+c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__fmt_s.o)
+                              c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__sio_printf_doux.o) (__fmt_s_needed)
+c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__fmt_u.o)
+                              c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__fmt_d.o) (__cvt_u)
+c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__fmt_x.o)
+                              c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__sio_printf_doux.o) (__fmt_x_needed)
+c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__pop_int.o)
+                              c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__sio_printf_doux.o) (__pop_int_needed)
+c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__printf_core.o)
+                              c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__fmt_d.o) (__pad)
+c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(fputc.o)
+                              c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__printf_core.o) (fputc)
+c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(puts.o)
+                              CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\main.c.o (puts)
+c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(stdout.o)
+                              CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o (_stdout)
+c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(strlen.o)
+                              c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__fmt_s.o) (strlen)
+c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(tolower.o)
+                              c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__printf_core.o) (tolower)
+c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(toupper.o)
+                              c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__fmt_x.o) (toupper)
+c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(errno.o)
+                              c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__printf_core.o) (__errno_val)
+c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(_Exit.o)
+                              c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(exit.o) (_Exit)
+c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__int_vfprintf.o)
+                              c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__sio_printf_doux.o) (__vfprintf)
+c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(fputs.o)
+                              c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(puts.o) (fputs)
+c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_udivmodsi4.o)
+                              c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__fmt_u.o) (__udivmodsi4)
+c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_exit.o)
+                              c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(_Exit.o) (_exit)
+c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_prologue.o)
+                              c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__sio_printf_doux.o) (__prologue_saves__)
+c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_epilogue.o)
+                              c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__sio_printf_doux.o) (__epilogue_restores__)
+
+Allocating common symbols
+Common symbol       size              file
+
+USART1_TxInterruptHandler
+                    0x2               CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+__stdout_used       0x2               c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(stdout.o)
+USART1_RxInterruptHandler
+                    0x2               CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+__errno_val         0x2               c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(errno.o)
+
+Discarded input sections
+
+ .data          0x0000000000000000        0x0 C:/Users/A76570/.mchp_packs/Microchip/AVR-Dx_DFP/2.8.343/xc8/avr/lib/avrxmega4/crtavr128da48.o
+ .bss           0x0000000000000000        0x0 C:/Users/A76570/.mchp_packs/Microchip/AVR-Dx_DFP/2.8.343/xc8/avr/lib/avrxmega4/crtavr128da48.o
+ .text          0x0000000000000000        0x0 CMakeFiles\TestAi2_default_default_XC8_assemblePreprocess.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\protected_io.S.o
+ .data          0x0000000000000000        0x0 CMakeFiles\TestAi2_default_default_XC8_assemblePreprocess.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\protected_io.S.o
+ .bss           0x0000000000000000        0x0 CMakeFiles\TestAi2_default_default_XC8_assemblePreprocess.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\protected_io.S.o
+ .text          0x0000000000000000        0x0 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\main.c.o
+ .data          0x0000000000000000        0x0 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\main.c.o
+ .bss           0x0000000000000000        0x0 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\main.c.o
+ .text          0x0000000000000000        0x0 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\i2c_host\src\twi0.c.o
+ .data          0x0000000000000000        0x0 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\i2c_host\src\twi0.c.o
+ .bss           0x0000000000000000        0x0 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\i2c_host\src\twi0.c.o
+ .rodata.I2C0_Host
+                0x0000000000000000       0x14 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\i2c_host\src\twi0.c.o
+ .text.TWI0_Deinitialize
+                0x0000000000000000       0x6e CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\i2c_host\src\twi0.c.o
+ .text.TWI0_Write
+                0x0000000000000000       0x82 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\i2c_host\src\twi0.c.o
+ .text.TWI0_Read
+                0x0000000000000000       0x82 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\i2c_host\src\twi0.c.o
+ .text.TWI0_WriteRead
+                0x0000000000000000       0x9c CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\i2c_host\src\twi0.c.o
+ .text.TWI0_ErrorGet
+                0x0000000000000000       0x1e CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\i2c_host\src\twi0.c.o
+ .text.TWI0_IsBusy
+                0x0000000000000000       0x36 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\i2c_host\src\twi0.c.o
+ .text.TWI0_CallbackRegister
+                0x0000000000000000       0x2e CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\i2c_host\src\twi0.c.o
+ .text.TWI0_ReadStart
+                0x0000000000000000       0x18 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\i2c_host\src\twi0.c.o
+ .text.TWI0_WriteStart
+                0x0000000000000000       0x18 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\i2c_host\src\twi0.c.o
+ .text          0x0000000000000000        0x0 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\clock.c.o
+ .data          0x0000000000000000        0x0 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\clock.c.o
+ .bss           0x0000000000000000        0x0 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\clock.c.o
+ .text          0x0000000000000000        0x0 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\config_bits.c.o
+ .data          0x0000000000000000        0x0 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\config_bits.c.o
+ .bss           0x0000000000000000        0x0 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\config_bits.c.o
+ .text          0x0000000000000000        0x0 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\interrupt.c.o
+ .data          0x0000000000000000        0x0 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\interrupt.c.o
+ .bss           0x0000000000000000        0x0 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\interrupt.c.o
+ .text          0x0000000000000000        0x0 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\pins.c.o
+ .data          0x0000000000000000        0x0 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\pins.c.o
+ .bss           0x0000000000000000        0x0 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\pins.c.o
+ .text          0x0000000000000000        0x0 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\system.c.o
+ .data          0x0000000000000000        0x0 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\system.c.o
+ .bss           0x0000000000000000        0x0 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\system.c.o
+ .text          0x0000000000000000        0x0 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\timer\src\tca0.c.o
+ .data          0x0000000000000000        0x0 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\timer\src\tca0.c.o
+ .bss           0x0000000000000000        0x0 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\timer\src\tca0.c.o
+ .rodata.Timer0
+                0x0000000000000000       0x16 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\timer\src\tca0.c.o
+ .text.TCA0_Deinitialize
+                0x0000000000000000       0xb2 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\timer\src\tca0.c.o
+ .text.TCA0_Start
+                0x0000000000000000       0x22 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\timer\src\tca0.c.o
+ .text.TCA0_Stop
+                0x0000000000000000       0x22 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\timer\src\tca0.c.o
+ .text.TCA0_CounterSet
+                0x0000000000000000       0x30 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\timer\src\tca0.c.o
+ .text.TCA0_CounterGet
+                0x0000000000000000       0x22 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\timer\src\tca0.c.o
+ .text.TCA0_PeriodSet
+                0x0000000000000000       0x30 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\timer\src\tca0.c.o
+ .text.TCA0_PeriodGet
+                0x0000000000000000       0x22 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\timer\src\tca0.c.o
+ .text.TCA0_MaxCountGet
+                0x0000000000000000       0x1a CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\timer\src\tca0.c.o
+ .text          0x0000000000000000        0x0 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+ .data          0x0000000000000000        0x0 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+ .bss           0x0000000000000000        0x0 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+ .rodata.UART1  0x0000000000000000       0x30 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+ .text.USART1_Deinitialize
+                0x0000000000000000       0x76 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+ .text.USART1_Enable
+                0x0000000000000000       0x22 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+ .text.USART1_Disable
+                0x0000000000000000       0x22 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+ .text.USART1_TransmitEnable
+                0x0000000000000000       0x22 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+ .text.USART1_TransmitDisable
+                0x0000000000000000       0x22 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+ .text.USART1_ReceiveEnable
+                0x0000000000000000       0x22 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+ .text.USART1_ReceiveDisable
+                0x0000000000000000       0x22 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+ .text.USART1_AutoBaudSet
+                0x0000000000000000       0x66 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+ .text.USART1_AutoBaudQuery
+                0x0000000000000000       0x28 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+ .text.USART1_IsAutoBaudDetectError
+                0x0000000000000000       0x28 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+ .text.USART1_AutoBaudDetectErrorReset
+                0x0000000000000000       0x3e CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+ .text.USART1_TransmitInterruptEnable
+                0x0000000000000000       0x22 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+ .text.USART1_TransmitInterruptDisable
+                0x0000000000000000       0x22 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+ .text.USART1_ReceiveInterruptEnable
+                0x0000000000000000       0x22 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+ .text.USART1_ReceiveInterruptDisable
+                0x0000000000000000       0x22 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+ .text.USART1_IsRxReady
+                0x0000000000000000       0x1a CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+ .text.USART1_IsTxDone
+                0x0000000000000000       0x20 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+ .text.USART1_ErrorGet
+                0x0000000000000000       0x38 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+ .text.USART1_Read
+                0x0000000000000000       0x70 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+ .text.USART1_RxCompleteCallbackRegister
+                0x0000000000000000       0x2e CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+ .text.USART1_TxCompleteCallbackRegister
+                0x0000000000000000       0x2e CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+ .text          0x0000000000000000        0x0 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\millis.c.o
+ .data          0x0000000000000000        0x0 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\millis.c.o
+ .bss           0x0000000000000000        0x0 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\millis.c.o
+ .text.micros   0x0000000000000000       0xc0 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\millis.c.o
+ .text.delay    0x0000000000000000       0x60 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\millis.c.o
+ .text          0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_copy_data.o)
+ .data          0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_copy_data.o)
+ .bss           0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_copy_data.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_copy_data.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_copy_data.o)
+ .text.libgcc   0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_copy_data.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_copy_data.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_copy_data.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_copy_data.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_copy_data.o)
+ .text          0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_muluhisi3.o)
+ .data          0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_muluhisi3.o)
+ .bss           0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_muluhisi3.o)
+ .text.libgcc.mul
+                0x0000000000000000       0x16 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_muluhisi3.o)
+ .stack.descriptors.hdr
+                0x0000000000000000        0xe c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_muluhisi3.o)
+ .stack.descriptors
+                0x0000000000000000       0x19 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_muluhisi3.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_muluhisi3.o)
+ .text.libgcc   0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_muluhisi3.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_muluhisi3.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_muluhisi3.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_muluhisi3.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_muluhisi3.o)
+ .text          0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_umulhisi3.o)
+ .data          0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_umulhisi3.o)
+ .bss           0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_umulhisi3.o)
+ .text.libgcc.mul
+                0x0000000000000000       0x1e c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_umulhisi3.o)
+ .stack.descriptors.hdr
+                0x0000000000000000        0xe c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_umulhisi3.o)
+ .stack.descriptors
+                0x0000000000000000       0x19 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_umulhisi3.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_umulhisi3.o)
+ .text.libgcc   0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_umulhisi3.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_umulhisi3.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_umulhisi3.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_umulhisi3.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_umulhisi3.o)
+ .text          0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(exit.o)
+ .data          0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(exit.o)
+ .bss           0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(exit.o)
+ .stack.descriptors
+                0x0000000000000000       0x73 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(exit.o)
+ .text          0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__sio_printf_doux.o)
+ .data          0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__sio_printf_doux.o)
+ .bss           0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__sio_printf_doux.o)
+ .stack.descriptors
+                0x0000000000000000       0x3a c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__sio_printf_doux.o)
+ .text.__sio_printf_doux
+                0x0000000000000000       0x1a c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__sio_printf_doux.o)
+ .text          0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__fmt_d.o)
+ .data          0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__fmt_d.o)
+ .bss           0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__fmt_d.o)
+ .stack.descriptors
+                0x0000000000000000       0x15 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__fmt_d.o)
+ .text          0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__fmt_o.o)
+ .data          0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__fmt_o.o)
+ .bss           0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__fmt_o.o)
+ .stack.descriptors
+                0x0000000000000000       0x15 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__fmt_o.o)
+ .text          0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__fmt_s.o)
+ .data          0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__fmt_s.o)
+ .bss           0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__fmt_s.o)
+ .stack.descriptors
+                0x0000000000000000       0x15 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__fmt_s.o)
+ .text          0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__fmt_u.o)
+ .data          0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__fmt_u.o)
+ .bss           0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__fmt_u.o)
+ .stack.descriptors
+                0x0000000000000000       0x2a c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__fmt_u.o)
+ .text          0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__fmt_x.o)
+ .data          0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__fmt_x.o)
+ .bss           0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__fmt_x.o)
+ .stack.descriptors
+                0x0000000000000000       0x15 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__fmt_x.o)
+ .text          0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__pop_int.o)
+ .data          0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__pop_int.o)
+ .bss           0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__pop_int.o)
+ .stack.descriptors
+                0x0000000000000000       0x17 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__pop_int.o)
+ .text          0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__printf_core.o)
+ .data          0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__printf_core.o)
+ .bss           0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__printf_core.o)
+ .stack.descriptors
+                0x0000000000000000       0x91 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__printf_core.o)
+ .text          0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(fputc.o)
+ .data          0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(fputc.o)
+ .bss           0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(fputc.o)
+ .stack.descriptors
+                0x0000000000000000       0x13 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(fputc.o)
+ .text          0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(puts.o)
+ .data          0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(puts.o)
+ .bss           0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(puts.o)
+ .stack.descriptors
+                0x0000000000000000       0x12 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(puts.o)
+ .text          0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(stdout.o)
+ .data          0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(stdout.o)
+ .bss           0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(stdout.o)
+ .stack.descriptors
+                0x0000000000000000       0x1b c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(stdout.o)
+ .text.__init_stdout
+                0x0000000000000000       0x1e c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(stdout.o)
+ .data.f        0x0000000000000000       0x10 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(stdout.o)
+ COMMON         0x0000000000000000        0x2 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(stdout.o)
+ .text          0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(strlen.o)
+ .data          0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(strlen.o)
+ .bss           0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(strlen.o)
+ .stack.descriptors
+                0x0000000000000000       0x14 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(strlen.o)
+ .text          0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(tolower.o)
+ .data          0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(tolower.o)
+ .bss           0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(tolower.o)
+ .stack.descriptors
+                0x0000000000000000       0x2e c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(tolower.o)
+ .text.__tolower_l
+                0x0000000000000000        0x6 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(tolower.o)
+ .text          0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(toupper.o)
+ .data          0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(toupper.o)
+ .bss           0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(toupper.o)
+ .stack.descriptors
+                0x0000000000000000       0x2e c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(toupper.o)
+ .text.__toupper_l
+                0x0000000000000000        0x6 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(toupper.o)
+ .text          0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(errno.o)
+ .data          0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(errno.o)
+ .bss           0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(errno.o)
+ .text          0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(_Exit.o)
+ .data          0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(_Exit.o)
+ .bss           0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(_Exit.o)
+ .stack.descriptors
+                0x0000000000000000       0x13 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(_Exit.o)
+ .text          0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__int_vfprintf.o)
+ .data          0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__int_vfprintf.o)
+ .bss           0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__int_vfprintf.o)
+ .stack.descriptors
+                0x0000000000000000       0x18 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__int_vfprintf.o)
+ .text          0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(fputs.o)
+ .data          0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(fputs.o)
+ .bss           0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(fputs.o)
+ .stack.descriptors
+                0x0000000000000000       0x13 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(fputs.o)
+ .text          0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_udivmodsi4.o)
+ .data          0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_udivmodsi4.o)
+ .bss           0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_udivmodsi4.o)
+ .stack.descriptors
+                0x0000000000000000       0x1a c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_udivmodsi4.o)
+ .text.libgcc   0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_udivmodsi4.o)
+ .text          0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_exit.o)
+ .data          0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_exit.o)
+ .bss           0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_exit.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_exit.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_exit.o)
+ .text.libgcc   0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_exit.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_exit.o)
+ .stack.descriptors
+                0x0000000000000000       0x13 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_exit.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_exit.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_exit.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_exit.o)
+ .text          0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_prologue.o)
+ .data          0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_prologue.o)
+ .bss           0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_prologue.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_prologue.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_prologue.o)
+ .text.libgcc   0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_prologue.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_prologue.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_prologue.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_prologue.o)
+ .text          0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_epilogue.o)
+ .data          0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_epilogue.o)
+ .bss           0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_epilogue.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_epilogue.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_epilogue.o)
+ .text.libgcc   0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_epilogue.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_epilogue.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_epilogue.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_epilogue.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x0000000000000000 0x0000000000020000 xr
+data             0x0000000000804000 0x0000000000004000 rw !x
+eeprom           0x0000000000810000 0x0000000000000200 rw !x
+fuse             0x0000000000820000 0x0000000000000010 rw !x
+lock             0x0000000000830000 0x0000000000000400 rw !x
+signature        0x0000000000840000 0x0000000000000400 rw !x
+user_signatures  0x0000000000850000 0x0000000000000400 rw !x
+bootrow          0x0000000000860000 0x0000000000000400 rw !x
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x804000
+                0x0000000000008000                __RODATA_PM_OFFSET__ = 0x8000
+LOAD C:/Users/A76570/.mchp_packs/Microchip/AVR-Dx_DFP/2.8.343/xc8/avr/lib/avrxmega4/crtavr128da48.o
+                0x0000000000000001                __MPLAB_BUILD = 0x1
+LOAD CMakeFiles\TestAi2_default_default_XC8_assemblePreprocess.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\protected_io.S.o
+LOAD CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\main.c.o
+LOAD CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\i2c_host\src\twi0.c.o
+LOAD CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\clock.c.o
+LOAD CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\config_bits.c.o
+LOAD CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\interrupt.c.o
+LOAD CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\pins.c.o
+LOAD CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\system.c.o
+LOAD CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\timer\src\tca0.c.o
+LOAD CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+LOAD CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\millis.c.o
+START GROUP
+LOAD c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a
+LOAD c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libm.a
+LOAD c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a
+LOAD C:/Users/A76570/.mchp_packs/Microchip/AVR-Dx_DFP/2.8.343/xc8/avr/lib/avrxmega4\libavr128da48.a
+END GROUP
+                [0x0000000000000000]                __TEXT_REGION_ORIGIN__ = DEFINED (__TEXT_REGION_ORIGIN__)?__TEXT_REGION_ORIGIN__:0x0
+                [0x0000000000804000]                __DATA_REGION_ORIGIN__ = DEFINED (__DATA_REGION_ORIGIN__)?__DATA_REGION_ORIGIN__:0x802000
+                [0x0000000000020000]                __TEXT_REGION_LENGTH__ = DEFINED (__TEXT_REGION_LENGTH__)?__TEXT_REGION_LENGTH__:0x100000
+                [0x0000000000004000]                __DATA_REGION_LENGTH__ = DEFINED (__DATA_REGION_LENGTH__)?__DATA_REGION_LENGTH__:0xffa0
+                [0x0000000000000200]                __EEPROM_REGION_LENGTH__ = DEFINED (__EEPROM_REGION_LENGTH__)?__EEPROM_REGION_LENGTH__:0x10000
+                [0x0000000000000010]                __FUSE_REGION_LENGTH__ = DEFINED (__FUSE_REGION_LENGTH__)?__FUSE_REGION_LENGTH__:0x400
+                0x0000000000000400                __LOCK_REGION_LENGTH__ = DEFINED (__LOCK_REGION_LENGTH__)?__LOCK_REGION_LENGTH__:0x400
+                0x0000000000000400                __SIGNATURE_REGION_LENGTH__ = DEFINED (__SIGNATURE_REGION_LENGTH__)?__SIGNATURE_REGION_LENGTH__:0x400
+                0x0000000000000400                __USER_SIGNATURE_REGION_LENGTH__ = DEFINED (__USER_SIGNATURE_REGION_LENGTH__)?__USER_SIGNATURE_REGION_LENGTH__:0x400
+                0x0000000000000400                __BOOTROW_REGION_LENGTH__ = DEFINED (__BOOTROW_REGION_LENGTH__)?__BOOTROW_REGION_LENGTH__:0x400
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x0000000000000000      0x182
+ *(.vectors)
+ .vectors       0x0000000000000000       0xe8 C:/Users/A76570/.mchp_packs/Microchip/AVR-Dx_DFP/2.8.343/xc8/avr/lib/avrxmega4/crtavr128da48.o
+                0x0000000000000000                __vector_default
+                0x0000000000000000                __vectors
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.dinit)
+ .dinit         0x00000000000000e8       0x41 data_init
+                0x000000000000012a                . = ALIGN (0x2)
+ *fill*         0x0000000000000129        0x1 
+                0x000000000000012a                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x000000000000012a        0x0 linker stubs
+ *(.trampolines*)
+                0x000000000000012a                __trampolines_end = .
+ *libprintf_flt.a:*(.progmem.data)
+ *libc.a:*(.progmem.data)
+                0x000000000000012a                . = ALIGN (0x2)
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x000000000000012a                __ctors_start = .
+ *(.ctors)
+                0x000000000000012a                __ctors_end = .
+                0x000000000000012a                __dtors_start = .
+ *(.dtors)
+                0x000000000000012a                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x000000000000012a        0x0 C:/Users/A76570/.mchp_packs/Microchip/AVR-Dx_DFP/2.8.343/xc8/avr/lib/avrxmega4/crtavr128da48.o
+                0x000000000000012a                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x000000000000012a        0xc C:/Users/A76570/.mchp_packs/Microchip/AVR-Dx_DFP/2.8.343/xc8/avr/lib/avrxmega4/crtavr128da48.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x0000000000000136       0x40 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_copy_data.o)
+                0x0000000000000136                __do_copy_data
+                0x0000000000000168                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x0000000000000176        0x8 C:/Users/A76570/.mchp_packs/Microchip/AVR-Dx_DFP/2.8.343/xc8/avr/lib/avrxmega4/crtavr128da48.o
+ *(.init9)
+                0x000000000000017e                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x000000000000017e        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_exit.o)
+                0x000000000000017e                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x000000000000017e        0x4 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_exit.o)
+ *(.fini0)
+                0x0000000000000182                _etext = .
+
+.data           0x0000000000804000        0x0 load address 0x0000000000000182
+                [!provide]                        PROVIDE (__data_start, .)
+ *(.gnu.linkonce.d*)
+ *(.gnu.linkonce.r*)
+                0x0000000000804000                . = ALIGN (0x2)
+                0x0000000000804000                _edata = .
+                [!provide]                        PROVIDE (__data_end, .)
+
+.bss            0x0000000000804000        0x6
+                [!provide]                        PROVIDE (__bss_start, .)
+ *(COMMON)
+ COMMON         0x0000000000804000        0x4 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+                0x0000000000804000                USART1_TxInterruptHandler
+                0x0000000000804002                USART1_RxInterruptHandler
+ COMMON         0x0000000000804004        0x2 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(errno.o)
+                0x0000000000804004                __errno_val
+                [!provide]                        PROVIDE (__bss_end, .)
+                0x0000000000000182                __data_load_start = LOADADDR (.data)
+                0x0000000000000182                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x0000000000804006        0x0
+                [!provide]                        PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                [!provide]                        PROVIDE (__noinit_end, .)
+                0x0000000000804006                _end = .
+
+.eeprom         0x0000000000810000        0x0
+ *(.eeprom*)
+                0x0000000000810000                __eeprom_end = .
+
+.fuse           0x0000000000820000        0x9
+ *(.fuse)
+ .fuse          0x0000000000820000        0x9 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\config_bits.c.o
+                0x0000000000820000                __fuse
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.user_signatures
+ *(.user_signatures*)
+
+.bootrow
+ *(.bootrow*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x5b
+ *(.comment)
+ .comment       0x0000000000000000       0x2f CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\main.c.o
+                                         0x30 (size before relaxing)
+ .comment       0x000000000000002f       0x30 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\i2c_host\src\twi0.c.o
+ .comment       0x000000000000002f       0x30 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\clock.c.o
+ .comment       0x000000000000002f       0x30 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\config_bits.c.o
+ .comment       0x000000000000002f       0x30 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\interrupt.c.o
+ .comment       0x000000000000002f       0x30 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\pins.c.o
+ .comment       0x000000000000002f       0x30 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\system.c.o
+ .comment       0x000000000000002f       0x30 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\timer\src\tca0.c.o
+ .comment       0x000000000000002f       0x30 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+ .comment       0x000000000000002f       0x30 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\millis.c.o
+ .comment       0x000000000000002f       0x2c c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(exit.o)
+                                         0x2d (size before relaxing)
+ .comment       0x000000000000005b       0x2d c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__sio_printf_doux.o)
+ .comment       0x000000000000005b       0x2d c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__fmt_d.o)
+ .comment       0x000000000000005b       0x2d c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__fmt_o.o)
+ .comment       0x000000000000005b       0x2d c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__fmt_s.o)
+ .comment       0x000000000000005b       0x2d c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__fmt_u.o)
+ .comment       0x000000000000005b       0x2d c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__fmt_x.o)
+ .comment       0x000000000000005b       0x2d c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__pop_int.o)
+ .comment       0x000000000000005b       0x2d c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__printf_core.o)
+ .comment       0x000000000000005b       0x2d c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(fputc.o)
+ .comment       0x000000000000005b       0x2d c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(puts.o)
+ .comment       0x000000000000005b       0x2d c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(stdout.o)
+ .comment       0x000000000000005b       0x2d c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(strlen.o)
+ .comment       0x000000000000005b       0x2d c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(tolower.o)
+ .comment       0x000000000000005b       0x2d c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(toupper.o)
+ .comment       0x000000000000005b       0x2d c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(errno.o)
+ .comment       0x000000000000005b       0x2d c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(_Exit.o)
+ .comment       0x000000000000005b       0x2d c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__int_vfprintf.o)
+ .comment       0x000000000000005b       0x2d c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(fputs.o)
+
+.stack.descriptors.hdr
+                0x0000000000000000      0x126
+ .stack.descriptors.hdr
+                0x0000000000000000        0xe c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(exit.o)
+ .stack.descriptors.hdr
+                0x000000000000000e        0xe c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__sio_printf_doux.o)
+ .stack.descriptors.hdr
+                0x000000000000001c        0xe c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__fmt_d.o)
+ .stack.descriptors.hdr
+                0x000000000000002a        0xe c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__fmt_o.o)
+ .stack.descriptors.hdr
+                0x0000000000000038        0xe c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__fmt_s.o)
+ .stack.descriptors.hdr
+                0x0000000000000046        0xe c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__fmt_u.o)
+ .stack.descriptors.hdr
+                0x0000000000000054        0xe c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__fmt_x.o)
+ .stack.descriptors.hdr
+                0x0000000000000062        0xe c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__pop_int.o)
+ .stack.descriptors.hdr
+                0x0000000000000070        0xe c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__printf_core.o)
+ .stack.descriptors.hdr
+                0x000000000000007e        0xe c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(fputc.o)
+ .stack.descriptors.hdr
+                0x000000000000008c        0xe c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(puts.o)
+ .stack.descriptors.hdr
+                0x000000000000009a        0xe c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(stdout.o)
+ .stack.descriptors.hdr
+                0x00000000000000a8        0xe c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(strlen.o)
+ .stack.descriptors.hdr
+                0x00000000000000b6        0xe c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(tolower.o)
+ .stack.descriptors.hdr
+                0x00000000000000c4        0xe c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(toupper.o)
+ .stack.descriptors.hdr
+                0x00000000000000d2        0xe c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(errno.o)
+ .stack.descriptors.hdr
+                0x00000000000000e0        0xe c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(_Exit.o)
+ .stack.descriptors.hdr
+                0x00000000000000ee        0xe c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__int_vfprintf.o)
+ .stack.descriptors.hdr
+                0x00000000000000fc        0xe c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(fputs.o)
+ .stack.descriptors.hdr
+                0x000000000000010a        0xe c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_udivmodsi4.o)
+ .stack.descriptors.hdr
+                0x0000000000000118        0xe c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_exit.o)
+
+.note.GNU-stack
+                0x0000000000000000        0x0
+ .note.GNU-stack
+                0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(exit.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__sio_printf_doux.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__fmt_d.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__fmt_o.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__fmt_s.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__fmt_u.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__fmt_x.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__pop_int.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__printf_core.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(fputc.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(puts.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(stdout.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(strlen.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(tolower.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(toupper.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(errno.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(_Exit.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__int_vfprintf.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(fputs.o)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x0000000000000000      0x430
+ *(.debug_aranges)
+ .debug_aranges
+                0x0000000000000000       0x20 CMakeFiles\TestAi2_default_default_XC8_assemblePreprocess.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\protected_io.S.o
+ .debug_aranges
+                0x0000000000000020       0x20 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\main.c.o
+ .debug_aranges
+                0x0000000000000040       0xd8 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\i2c_host\src\twi0.c.o
+ .debug_aranges
+                0x0000000000000118       0x28 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\clock.c.o
+ .debug_aranges
+                0x0000000000000140       0x18 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\config_bits.c.o
+ .debug_aranges
+                0x0000000000000158       0x28 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\interrupt.c.o
+ .debug_aranges
+                0x0000000000000180       0xa0 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\pins.c.o
+ .debug_aranges
+                0x0000000000000220       0x20 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\system.c.o
+ .debug_aranges
+                0x0000000000000240       0x70 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\timer\src\tca0.c.o
+ .debug_aranges
+                0x00000000000002b0      0x138 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+ .debug_aranges
+                0x00000000000003e8       0x48 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\millis.c.o
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x0000000000000000    0x43d72
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x0000000000000000     0x2fda C:/Users/A76570/.mchp_packs/Microchip/AVR-Dx_DFP/2.8.343/xc8/avr/lib/avrxmega4/crtavr128da48.o
+ .debug_info    0x0000000000002fda       0xc2 CMakeFiles\TestAi2_default_default_XC8_assemblePreprocess.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\protected_io.S.o
+ .debug_info    0x000000000000309c      0x300 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\main.c.o
+ .debug_info    0x000000000000339c     0xaaf3 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\i2c_host\src\twi0.c.o
+ .debug_info    0x000000000000de8f      0x805 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\clock.c.o
+ .debug_info    0x000000000000e694     0xa538 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\config_bits.c.o
+ .debug_info    0x0000000000018bcc      0x3a2 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\interrupt.c.o
+ .debug_info    0x0000000000018f6e     0xa694 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\pins.c.o
+ .debug_info    0x0000000000023602      0x27a CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\system.c.o
+ .debug_info    0x000000000002387c     0xad80 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\timer\src\tca0.c.o
+ .debug_info    0x000000000002e5fc     0xafe7 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+ .debug_info    0x00000000000395e3     0xa78f CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\millis.c.o
+
+.debug_abbrev   0x0000000000000000     0x3a81
+ *(.debug_abbrev)
+ .debug_abbrev  0x0000000000000000     0x2d52 C:/Users/A76570/.mchp_packs/Microchip/AVR-Dx_DFP/2.8.343/xc8/avr/lib/avrxmega4/crtavr128da48.o
+ .debug_abbrev  0x0000000000002d52       0x14 CMakeFiles\TestAi2_default_default_XC8_assemblePreprocess.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\protected_io.S.o
+ .debug_abbrev  0x0000000000002d66       0x87 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\main.c.o
+ .debug_abbrev  0x0000000000002ded      0x2ac CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\i2c_host\src\twi0.c.o
+ .debug_abbrev  0x0000000000003099       0xd0 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\clock.c.o
+ .debug_abbrev  0x0000000000003169       0x9e CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\config_bits.c.o
+ .debug_abbrev  0x0000000000003207       0xd0 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\interrupt.c.o
+ .debug_abbrev  0x00000000000032d7      0x130 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\pins.c.o
+ .debug_abbrev  0x0000000000003407       0x37 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\system.c.o
+ .debug_abbrev  0x000000000000343e      0x1c9 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\timer\src\tca0.c.o
+ .debug_abbrev  0x0000000000003607      0x2e2 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+ .debug_abbrev  0x00000000000038e9      0x198 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\millis.c.o
+
+.debug_line     0x0000000000000000     0x2390
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x0000000000000000      0x1f3 C:/Users/A76570/.mchp_packs/Microchip/AVR-Dx_DFP/2.8.343/xc8/avr/lib/avrxmega4/crtavr128da48.o
+ .debug_line    0x00000000000001f3       0xa4 CMakeFiles\TestAi2_default_default_XC8_assemblePreprocess.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\protected_io.S.o
+ .debug_line    0x0000000000000297      0x160 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\main.c.o
+ .debug_line    0x00000000000003f7      0x779 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\i2c_host\src\twi0.c.o
+ .debug_line    0x0000000000000b70      0x1d5 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\clock.c.o
+ .debug_line    0x0000000000000d45      0x11c CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\config_bits.c.o
+ .debug_line    0x0000000000000e61      0x1c1 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\interrupt.c.o
+ .debug_line    0x0000000000001022      0x4e1 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\pins.c.o
+ .debug_line    0x0000000000001503       0xb0 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\system.c.o
+ .debug_line    0x00000000000015b3      0x384 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\timer\src\tca0.c.o
+ .debug_line    0x0000000000001937      0x83f CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+ .debug_line    0x0000000000002176      0x21a CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\millis.c.o
+
+.debug_frame    0x0000000000000000      0xf84
+ *(.debug_frame)
+ .debug_frame   0x0000000000000000       0x40 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\main.c.o
+ .debug_frame   0x0000000000000040      0x364 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\i2c_host\src\twi0.c.o
+ .debug_frame   0x00000000000003a4       0x54 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\clock.c.o
+ .debug_frame   0x00000000000003f8       0x54 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\interrupt.c.o
+ .debug_frame   0x000000000000044c      0x318 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\pins.c.o
+ .debug_frame   0x0000000000000764       0x34 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\system.c.o
+ .debug_frame   0x0000000000000798      0x1b8 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\timer\src\tca0.c.o
+ .debug_frame   0x0000000000000950      0x560 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+ .debug_frame   0x0000000000000eb0       0xd4 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\millis.c.o
+
+.debug_str      0x0000000000000000     0x152c
+ *(.debug_str)
+ .debug_str     0x0000000000000000     0x1411 C:/Users/A76570/.mchp_packs/Microchip/AVR-Dx_DFP/2.8.343/xc8/avr/lib/avrxmega4/crtavr128da48.o
+ .debug_str     0x0000000000001411        0x0 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\main.c.o
+ .debug_str     0x0000000000001411       0x42 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\i2c_host\src\twi0.c.o
+ .debug_str     0x0000000000001453        0x0 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\clock.c.o
+ .debug_str     0x0000000000001453        0x0 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\config_bits.c.o
+ .debug_str     0x0000000000001453        0x0 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\interrupt.c.o
+ .debug_str     0x0000000000001453       0x25 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\pins.c.o
+ .debug_str     0x0000000000001478        0x0 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\system.c.o
+ .debug_str     0x0000000000001478       0x52 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\timer\src\tca0.c.o
+ .debug_str     0x00000000000014ca       0x10 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+ .debug_str     0x00000000000014da       0x52 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\millis.c.o
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges   0x0000000000000000      0x368
+ *(.debug_ranges)
+ .debug_ranges  0x0000000000000000       0x10 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\main.c.o
+ .debug_ranges  0x0000000000000010       0xc8 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\i2c_host\src\twi0.c.o
+ .debug_ranges  0x00000000000000d8       0x18 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\clock.c.o
+ .debug_ranges  0x00000000000000f0       0x18 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\interrupt.c.o
+ .debug_ranges  0x0000000000000108       0x90 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\pins.c.o
+ .debug_ranges  0x0000000000000198       0x10 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\system.c.o
+ .debug_ranges  0x00000000000001a8       0x60 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\timer\src\tca0.c.o
+ .debug_ranges  0x0000000000000208      0x128 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+ .debug_ranges  0x0000000000000330       0x38 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\millis.c.o
+
+.debug_macro
+ *(.debug_macro)
+OUTPUT(C:\Users\A76570\MPLABProjects\TestAi2\out\TestAi2\default.elf elf32-avr)
+LOAD linker stubs
+LOAD data_init
+
+.note.gnu.avr.deviceinfo
+                0x0000000000000000       0x40
+ .note.gnu.avr.deviceinfo
+                0x0000000000000000       0x40 C:/Users/A76570/.mchp_packs/Microchip/AVR-Dx_DFP/2.8.343/xc8/avr/lib/avrxmega4/crtavr128da48.o
+
+.bss.TWI0_Callback
+                0x0000000000804150        0x2
+ .bss.TWI0_Callback
+                0x0000000000804150        0x2 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\i2c_host\src\twi0.c.o
+
+.bss.twi0_Status
+                0x0000000000804129        0xe
+ .bss.twi0_Status
+                0x0000000000804129        0xe CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\i2c_host\src\twi0.c.o
+
+.bss.IO_PC1_InterruptHandler
+                0x0000000000804152        0x2
+ .bss.IO_PC1_InterruptHandler
+                0x0000000000804152        0x2 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\pins.c.o
+
+.bss.IO_PC0_InterruptHandler
+                0x0000000000804154        0x2
+ .bss.IO_PC0_InterruptHandler
+                0x0000000000804154        0x2 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\pins.c.o
+
+.bss.IO_PC3_InterruptHandler
+                0x0000000000804156        0x2
+ .bss.IO_PC3_InterruptHandler
+                0x0000000000804156        0x2 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\pins.c.o
+
+.bss.IO_PC2_InterruptHandler
+                0x0000000000804158        0x2
+ .bss.IO_PC2_InterruptHandler
+                0x0000000000804158        0x2 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\pins.c.o
+
+.bss.IO_PC6_InterruptHandler
+                0x000000000080415a        0x2
+ .bss.IO_PC6_InterruptHandler
+                0x000000000080415a        0x2 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\pins.c.o
+
+.bss.TCA0_OverflowCallback
+                0x000000000080415c        0x2
+ .bss.TCA0_OverflowCallback
+                0x000000000080415c        0x2 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\timer\src\tca0.c.o
+
+.bss.usart1TxHead
+                0x000000000080416e        0x1
+ .bss.usart1TxHead
+                0x000000000080416e        0x1 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+
+.bss.usart1TxTail
+                0x000000000080416f        0x1
+ .bss.usart1TxTail
+                0x000000000080416f        0x1 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+
+.bss.usart1TxBufferRemaining
+                0x0000000000804170        0x1
+ .bss.usart1TxBufferRemaining
+                0x0000000000804170        0x1 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+
+.bss.usart1TxBuffer
+                0x00000000008040c1       0x20
+ .bss.usart1TxBuffer
+                0x00000000008040c1       0x20 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+
+.bss.usart1IsTxComplete
+                0x0000000000804171        0x1
+ .bss.usart1IsTxComplete
+                0x0000000000804171        0x1 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+
+.bss.usart1RxHead
+                0x0000000000804172        0x1
+ .bss.usart1RxHead
+                0x0000000000804172        0x1 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+
+.bss.usart1RxTail
+                0x0000000000804173        0x1
+ .bss.usart1RxTail
+                0x0000000000804173        0x1 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+
+.bss.usart1RxCount
+                0x0000000000804174        0x1
+ .bss.usart1RxCount
+                0x0000000000804174        0x1 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+
+.bss.usart1RxBuffer
+                0x0000000000804137        0x8
+ .bss.usart1RxBuffer
+                0x0000000000804137        0x8 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+
+.bss.usart1RxStatusBuffer
+                0x0000000000804109       0x10
+ .bss.usart1RxStatusBuffer
+                0x0000000000804109       0x10 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+
+.bss.usart1RxLastError
+                0x000000000080415e        0x2
+ .bss.usart1RxLastError
+                0x000000000080415e        0x2 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+
+.bss.USART1_FramingErrorHandler
+                0x0000000000804160        0x2
+ .bss.USART1_FramingErrorHandler
+                0x0000000000804160        0x2 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+
+.bss.USART1_OverrunErrorHandler
+                0x0000000000804162        0x2
+ .bss.USART1_OverrunErrorHandler
+                0x0000000000804162        0x2 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+
+.bss.USART1_ParityErrorHandler
+                0x0000000000804164        0x2
+ .bss.USART1_ParityErrorHandler
+                0x0000000000804164        0x2 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+
+.bss.USART1_TxCompleteInterruptHandler
+                0x0000000000804166        0x2
+ .bss.USART1_TxCompleteInterruptHandler
+                0x0000000000804166        0x2 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+
+.bss.USART1_RxCompleteInterruptHandler
+                0x0000000000804168        0x2
+ .bss.USART1_RxCompleteInterruptHandler
+                0x0000000000804168        0x2 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+
+.bss.millisCounter
+                0x000000000080414c        0x4
+ .bss.millisCounter
+                0x000000000080414c        0x4 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\millis.c.o
+
+.bss.__stdout   0x000000000080416c        0x2
+ .bss.__stdout  0x000000000080416c        0x2 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(stdout.o)
+
+.text.vfpfcnvrt
+                0x0000000000000182      0x3fc
+ .text.vfpfcnvrt
+                0x0000000000000182      0x3fc c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__printf_core.o)
+                0x0000000000000182                vfpfcnvrt
+
+.text.PIN_MANAGER_Initialize
+                0x000000000000057e      0x276
+ .text.PIN_MANAGER_Initialize
+                0x000000000000057e      0x276 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\pins.c.o
+                0x000000000000057e                PIN_MANAGER_Initialize
+
+.text.__fmt_x   0x00000000000007f4      0x1dc
+ .text.__fmt_x  0x00000000000007f4      0x1dc c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__fmt_x.o)
+                0x00000000000007f4                __fmt_x_needed
+                0x00000000000007f4                __fmt_x
+
+.text.USART1_ReceiveISR
+                0x00000000000009d0      0x146
+ .text.USART1_ReceiveISR
+                0x00000000000009d0      0x146 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+                0x00000000000009d0                USART1_ReceiveISR
+
+.text.main      0x0000000000000b16      0x10a
+ .text.main     0x0000000000000b16      0x10a CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\main.c.o
+                0x0000000000000b16                main
+
+.text.__vector_29
+                0x0000000000000c20      0x104
+ .text.__vector_29
+                0x0000000000000c20      0x104 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\pins.c.o
+                0x0000000000000c20                __vector_29
+
+.text.TWI0_ErrorEventHandler
+                0x0000000000000d24       0xe8
+ .text.TWI0_ErrorEventHandler
+                0x0000000000000d24       0xe8 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\i2c_host\src\twi0.c.o
+
+.text.__fmt_d   0x0000000000000e0c       0xe4
+ .text.__fmt_d  0x0000000000000e0c       0xe4 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__fmt_d.o)
+                0x0000000000000e0c                __fmt_d
+                0x0000000000000e0c                __fmt_d_needed
+
+.text.USART1_Initialize
+                0x0000000000000ef0       0xd8
+ .text.USART1_Initialize
+                0x0000000000000ef0       0xd8 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+                0x0000000000000ef0                USART1_Initialize
+
+.text.I2C_EVENT_RX
+                0x0000000000000fc8       0xd0
+ .text.I2C_EVENT_RX
+                0x0000000000000fc8       0xd0 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\i2c_host\src\twi0.c.o
+
+.text.__pop_int
+                0x0000000000001098       0xd0
+ .text.__pop_int
+                0x0000000000001098       0xd0 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__pop_int.o)
+                0x0000000000001098                __pop_int_needed
+                0x0000000000001098                __pop_int
+
+.text.__cvt_u   0x0000000000001168       0xca
+ .text.__cvt_u  0x0000000000001168       0xca c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__fmt_u.o)
+                0x0000000000001168                __cvt_u
+
+.text.TCA0_Initialize
+                0x0000000000001232       0xb2
+ .text.TCA0_Initialize
+                0x0000000000001232       0xb2 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\timer\src\tca0.c.o
+                0x0000000000001232                TCA0_Initialize
+
+.text.__fmt_o   0x00000000000012e4       0xb2
+ .text.__fmt_o  0x00000000000012e4       0xb2 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__fmt_o.o)
+                0x00000000000012e4                __fmt_o
+                0x00000000000012e4                __fmt_o_needed
+
+.text.MILLIS_IntervalElapsed
+                0x0000000000001396       0xa2
+ .text.MILLIS_IntervalElapsed
+                0x0000000000001396       0xa2 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\millis.c.o
+                0x0000000000001396                MILLIS_IntervalElapsed
+
+.text.__vector_33
+                0x0000000000001438       0xa0
+ .text.__vector_33
+                0x0000000000001438       0xa0 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+                0x0000000000001438                __vector_33
+
+.text.fputc     0x00000000000014d8       0x98
+ .text.fputc    0x00000000000014d8       0x98 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(fputc.o)
+                0x00000000000014d8                fputc
+                0x00000000000014d8                putc
+
+.text.__fmt_u   0x0000000000001570       0x8e
+ .text.__fmt_u  0x0000000000001570       0x8e c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__fmt_u.o)
+                0x0000000000001570                __fmt_u_needed
+                0x0000000000001570                __fmt_u
+
+.text.__vector_17
+                0x00000000000015fe       0x8c
+ .text.__vector_17
+                0x00000000000015fe       0x8c CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\i2c_host\src\twi0.c.o
+                0x00000000000015fe                __vector_17
+
+.text.__vector_7
+                0x000000000000168a       0x7c
+ .text.__vector_7
+                0x000000000000168a       0x7c CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\timer\src\tca0.c.o
+                0x000000000000168a                __vector_7
+
+.text.I2C_EVENT_TX
+                0x0000000000001706       0x7a
+ .text.I2C_EVENT_TX
+                0x0000000000001706       0x7a CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\i2c_host\src\twi0.c.o
+
+.text.TWI0_Initialize
+                0x0000000000001780       0x78
+ .text.TWI0_Initialize
+                0x0000000000001780       0x78 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\i2c_host\src\twi0.c.o
+                0x0000000000001780                TWI0_Initialize
+
+.text.__pad     0x00000000000017f8       0x72
+ .text.__pad    0x00000000000017f8       0x72 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__printf_core.o)
+                0x00000000000017f8                __pad
+
+.text.USART1_Write
+                0x000000000000186a       0x70
+ .text.USART1_Write
+                0x000000000000186a       0x70 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+                0x000000000000186a                USART1_Write
+
+.text.CLOCK_Initialize
+                0x00000000000018da       0x6a
+ .text.CLOCK_Initialize
+                0x00000000000018da       0x6a CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\clock.c.o
+                0x00000000000018da                CLOCK_Initialize
+
+.text.__printf_core
+                0x0000000000001944       0x68
+ .text.__printf_core
+                0x0000000000001944       0x68 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__printf_core.o)
+                0x0000000000001944                __printf_core
+
+.text.__vector_31
+                0x00000000000019ac       0x66
+ .text.__vector_31
+                0x00000000000019ac       0x66 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+                0x00000000000019ac                __vector_31
+
+.text.__vector_32
+                0x0000000000001a12       0x66
+ .text.__vector_32
+                0x0000000000001a12       0x66 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+                0x0000000000001a12                __vector_32
+
+.text.fputs     0x0000000000001a78       0x64
+ .text.fputs    0x0000000000001a78       0x64 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(fputs.o)
+                0x0000000000001a78                fputs
+                0x0000000000001a78                fputs_unlocked
+
+.text.USART1_TransmitISR
+                0x0000000000001adc       0x62
+ .text.USART1_TransmitISR
+                0x0000000000001adc       0x62 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+                0x0000000000001adc                USART1_TransmitISR
+
+.text.read_prec_or_width
+                0x0000000000001b3e       0x5c
+ .text.read_prec_or_width
+                0x0000000000001b3e       0x5c c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__printf_core.o)
+
+.text.__fmt_s   0x0000000000001b9a       0x54
+ .text.__fmt_s  0x0000000000001b9a       0x54 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__fmt_s.o)
+                0x0000000000001b9a                __fmt_s
+                0x0000000000001b9a                __fmt_0_needed
+                0x0000000000001b9a                __fmt_s_needed
+
+.text.TWI0_Close
+                0x0000000000001bee       0x48
+ .text.TWI0_Close
+                0x0000000000001bee       0x48 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\i2c_host\src\twi0.c.o
+
+.text.__vector_6
+                0x0000000000001c36       0x48
+ .text.__vector_6
+                0x0000000000001c36       0x48 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\pins.c.o
+                0x0000000000001c36                __vector_6
+
+.text.__vector_44
+                0x0000000000001c7e       0x48
+ .text.__vector_44
+                0x0000000000001c7e       0x48 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\pins.c.o
+                0x0000000000001c7e                __vector_44
+
+.text.__vector_22
+                0x0000000000001cc6       0x48
+ .text.__vector_22
+                0x0000000000001cc6       0x48 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\pins.c.o
+                0x0000000000001cc6                __vector_22
+
+.text.__vector_45
+                0x0000000000001d0e       0x48
+ .text.__vector_45
+                0x0000000000001d0e       0x48 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\pins.c.o
+                0x0000000000001d0e                __vector_45
+
+.text.__vector_34
+                0x0000000000001d56       0x48
+ .text.__vector_34
+                0x0000000000001d56       0x48 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\pins.c.o
+                0x0000000000001d56                __vector_34
+
+.text.millis    0x0000000000001d9e       0x46
+ .text.millis   0x0000000000001d9e       0x46 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\millis.c.o
+                0x0000000000001d9e                millis
+
+.text.libgcc.div
+                0x0000000000001de4       0x44
+ .text.libgcc.div
+                0x0000000000001de4       0x44 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_udivmodsi4.o)
+                0x0000000000001de4                __udivmodsi4
+
+.text.__fmt_state
+                0x0000000000001e28       0x40
+ .text.__fmt_state
+                0x0000000000001e28       0x40 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__printf_core.o)
+                0x0000000000001e28                __fmt_state
+
+.text.__out     0x0000000000001e68       0x3a
+ .text.__out    0x0000000000001e68       0x3a c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__printf_core.o)
+                0x0000000000001e68                __out
+
+.text.I2C_EVENT_RESET
+                0x0000000000001ea2       0x38
+ .text.I2C_EVENT_RESET
+                0x0000000000001ea2       0x38 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\i2c_host\src\twi0.c.o
+
+.text.USART1_printCHAR
+                0x0000000000001eda       0x38
+ .text.USART1_printCHAR
+                0x0000000000001eda       0x38 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+                0x0000000000001eda                USART1_printCHAR
+
+.text.MILLIS_Tick
+                0x0000000000001f12       0x36
+ .text.MILLIS_Tick
+                0x0000000000001f12       0x36 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\millis.c.o
+
+.text.libgcc.prologue
+                0x0000000000001f48       0x32
+ .text.libgcc.prologue
+                0x0000000000001f48       0x32 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_prologue.o)
+                0x0000000000001f48                __prologue_saves__
+
+.text.__wrap_printf
+                0x0000000000001f7a       0x30
+ .text.__wrap_printf
+                0x0000000000001f7a       0x30 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__sio_printf_doux.o)
+                0x0000000000001f7a                _printf_cdopuxX
+
+.text.__vfprintf
+                0x0000000000001faa       0x30
+ .text.__vfprintf
+                0x0000000000001faa       0x30 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__int_vfprintf.o)
+                0x0000000000001faa                __vfprintf
+
+.text.libgcc.prologue
+                0x0000000000001fda       0x30
+ .text.libgcc.prologue
+                0x0000000000001fda       0x30 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4\libgcc.a(_epilogue.o)
+                0x0000000000001fda                __epilogue_restores__
+
+.text.TWI0_EventHandler
+                0x000000000000200a       0x2e
+ .text.TWI0_EventHandler
+                0x000000000000200a       0x2e CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\i2c_host\src\twi0.c.o
+
+.text.TWI0_CommandUpdate
+                0x0000000000002038       0x2e
+ .text.TWI0_CommandUpdate
+                0x0000000000002038       0x2e CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\i2c_host\src\twi0.c.o
+
+.text.USART1_FramingErrorCallbackRegister
+                0x0000000000002066       0x2e
+ .text.USART1_FramingErrorCallbackRegister
+                0x0000000000002066       0x2e CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+                0x0000000000002066                USART1_FramingErrorCallbackRegister
+
+.text.USART1_OverrunErrorCallbackRegister
+                0x0000000000002094       0x2e
+ .text.USART1_OverrunErrorCallbackRegister
+                0x0000000000002094       0x2e CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+                0x0000000000002094                USART1_OverrunErrorCallbackRegister
+
+.text.USART1_ParityErrorCallbackRegister
+                0x00000000000020c2       0x2e
+ .text.USART1_ParityErrorCallbackRegister
+                0x00000000000020c2       0x2e CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+                0x00000000000020c2                USART1_ParityErrorCallbackRegister
+
+.text.ccp_write_io
+                0x00000000000020f0       0x2c
+ .text.ccp_write_io
+                0x00000000000020f0       0x2c CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\clock.c.o
+
+.text.ccp_write_io
+                0x000000000000211c       0x2c
+ .text.ccp_write_io
+                0x000000000000211c       0x2c CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\interrupt.c.o
+
+.text.CPUINT_Initialize
+                0x0000000000002148       0x2c
+ .text.CPUINT_Initialize
+                0x0000000000002148       0x2c CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\interrupt.c.o
+                0x0000000000002148                CPUINT_Initialize
+
+.text.I2C_EVENT_ERROR
+                0x0000000000002174       0x28
+ .text.I2C_EVENT_ERROR
+                0x0000000000002174       0x28 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\i2c_host\src\twi0.c.o
+
+.text.SYSTEM_Initialize
+                0x000000000000219c       0x28
+ .text.SYSTEM_Initialize
+                0x000000000000219c       0x28 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\system.c.o
+                0x000000000000219c                SYSTEM_Initialize
+
+.text.MILLIS_Initialize
+                0x00000000000021c4       0x28
+ .text.MILLIS_Initialize
+                0x00000000000021c4       0x28 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\millis.c.o
+                0x00000000000021c4                MILLIS_Initialize
+
+.text.IO_PC1_SetInterruptHandler
+                0x00000000000021ec       0x26
+ .text.IO_PC1_SetInterruptHandler
+                0x00000000000021ec       0x26 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\pins.c.o
+                0x00000000000021ec                IO_PC1_SetInterruptHandler
+
+.text.IO_PC0_SetInterruptHandler
+                0x0000000000002212       0x26
+ .text.IO_PC0_SetInterruptHandler
+                0x0000000000002212       0x26 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\pins.c.o
+                0x0000000000002212                IO_PC0_SetInterruptHandler
+
+.text.IO_PC3_SetInterruptHandler
+                0x0000000000002238       0x26
+ .text.IO_PC3_SetInterruptHandler
+                0x0000000000002238       0x26 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\pins.c.o
+                0x0000000000002238                IO_PC3_SetInterruptHandler
+
+.text.IO_PC2_SetInterruptHandler
+                0x000000000000225e       0x26
+ .text.IO_PC2_SetInterruptHandler
+                0x000000000000225e       0x26 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\pins.c.o
+                0x000000000000225e                IO_PC2_SetInterruptHandler
+
+.text.IO_PC6_SetInterruptHandler
+                0x0000000000002284       0x26
+ .text.IO_PC6_SetInterruptHandler
+                0x0000000000002284       0x26 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\pins.c.o
+                0x0000000000002284                IO_PC6_SetInterruptHandler
+
+.text.TCA0_OverflowCallbackRegister
+                0x00000000000022aa       0x26
+ .text.TCA0_OverflowCallbackRegister
+                0x00000000000022aa       0x26 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\timer\src\tca0.c.o
+                0x00000000000022aa                TCA0_OverflowCallbackRegister
+
+.text.I2C_EVENT_SEND_RD_ADDR
+                0x00000000000022d0       0x24
+ .text.I2C_EVENT_SEND_RD_ADDR
+                0x00000000000022d0       0x24 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\i2c_host\src\twi0.c.o
+
+.text.I2C_EVENT_SEND_WR_ADDR
+                0x00000000000022f4       0x22
+ .text.I2C_EVENT_SEND_WR_ADDR
+                0x00000000000022f4       0x22 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\i2c_host\src\twi0.c.o
+
+.text.I2C_EVENT_IDLE
+                0x0000000000002316       0x1e
+ .text.I2C_EVENT_IDLE
+                0x0000000000002316       0x1e CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\i2c_host\src\twi0.c.o
+
+.text.I2C_EVENT_NACK
+                0x0000000000002334       0x1e
+ .text.I2C_EVENT_NACK
+                0x0000000000002334       0x1e CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\i2c_host\src\twi0.c.o
+
+.text.strlen    0x0000000000002352       0x1c
+ .text.strlen   0x0000000000002352       0x1c c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(strlen.o)
+                0x0000000000002352                strlen
+
+.text.I2C_EVENT_STOP
+                0x000000000000236e       0x1a
+ .text.I2C_EVENT_STOP
+                0x000000000000236e       0x1a CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\i2c_host\src\twi0.c.o
+
+.text.USART1_IsTxReady
+                0x0000000000002388       0x1a
+ .text.USART1_IsTxReady
+                0x0000000000002388       0x1a CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+                0x0000000000002388                USART1_IsTxReady
+
+.text.exit      0x00000000000023a2       0x16
+ .text.exit     0x00000000000023a2       0x16 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(exit.o)
+                0x00000000000023a2                exit
+
+.text.puts      0x00000000000023b8       0x12
+ .text.puts     0x00000000000023b8       0x12 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(puts.o)
+                0x00000000000023b8                puts
+
+.text.toupper   0x00000000000023ca       0x12
+ .text.toupper  0x00000000000023ca       0x12 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(toupper.o)
+                0x00000000000023ca                toupper
+
+.text.IO_PC1_DefaultInterruptHandler
+                0x00000000000023dc       0x10
+ .text.IO_PC1_DefaultInterruptHandler
+                0x00000000000023dc       0x10 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\pins.c.o
+                0x00000000000023dc                IO_PC1_DefaultInterruptHandler
+
+.text.IO_PC0_DefaultInterruptHandler
+                0x00000000000023ec       0x10
+ .text.IO_PC0_DefaultInterruptHandler
+                0x00000000000023ec       0x10 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\pins.c.o
+                0x00000000000023ec                IO_PC0_DefaultInterruptHandler
+
+.text.IO_PC3_DefaultInterruptHandler
+                0x00000000000023fc       0x10
+ .text.IO_PC3_DefaultInterruptHandler
+                0x00000000000023fc       0x10 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\pins.c.o
+                0x00000000000023fc                IO_PC3_DefaultInterruptHandler
+
+.text.IO_PC2_DefaultInterruptHandler
+                0x000000000000240c       0x10
+ .text.IO_PC2_DefaultInterruptHandler
+                0x000000000000240c       0x10 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\pins.c.o
+                0x000000000000240c                IO_PC2_DefaultInterruptHandler
+
+.text.IO_PC6_DefaultInterruptHandler
+                0x000000000000241c       0x10
+ .text.IO_PC6_DefaultInterruptHandler
+                0x000000000000241c       0x10 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\pins.c.o
+                0x000000000000241c                IO_PC6_DefaultInterruptHandler
+
+.text.USART1_DefaultFramingErrorCallback
+                0x000000000000242c       0x10
+ .text.USART1_DefaultFramingErrorCallback
+                0x000000000000242c       0x10 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+
+.text.USART1_DefaultOverrunErrorCallback
+                0x000000000000243c       0x10
+ .text.USART1_DefaultOverrunErrorCallback
+                0x000000000000243c       0x10 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+
+.text.USART1_DefaultParityErrorCallback
+                0x000000000000244c       0x10
+ .text.USART1_DefaultParityErrorCallback
+                0x000000000000244c       0x10 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+
+.text.tolower   0x000000000000245c       0x10
+ .text.tolower  0x000000000000245c       0x10 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(tolower.o)
+                0x000000000000245c                tolower
+
+.text.protected_write_io
+                0x000000000000246c        0xa
+ .text.protected_write_io
+                0x000000000000246c        0xa CMakeFiles\TestAi2_default_default_XC8_assemblePreprocess.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\system\src\protected_io.S.o
+                0x000000000000246c                protected_write_io
+
+.text           0x0000000000002476        0x4
+ .text          0x0000000000002476        0x4 C:/Users/A76570/.mchp_packs/Microchip/AVR-Dx_DFP/2.8.343/xc8/avr/lib/avrxmega4/crtavr128da48.o
+                0x0000000000002476                __vector_38
+                0x0000000000002476                __vector_28
+                0x0000000000002476                __vector_1
+                0x0000000000002476                __vector_24
+                0x0000000000002476                __vector_12
+                0x0000000000002476                __vector_55
+                0x0000000000002476                __vector_46
+                0x0000000000002476                __bad_interrupt
+                0x0000000000002476                __vector_35
+                0x0000000000002476                __vector_39
+                0x0000000000002476                __vector_3
+                0x0000000000002476                __vector_23
+                0x0000000000002476                __vector_30
+                0x0000000000002476                __vector_25
+                0x0000000000002476                __vector_11
+                0x0000000000002476                __vector_54
+                0x0000000000002476                __vector_13
+                0x0000000000002476                __vector_19
+                0x0000000000002476                __vector_56
+                0x0000000000002476                __vector_49
+                0x0000000000002476                __vector_41
+                0x0000000000002476                __vector_43
+                0x0000000000002476                __vector_27
+                0x0000000000002476                __vector_5
+                0x0000000000002476                __vector_47
+                0x0000000000002476                __vector_52
+                0x0000000000002476                __vector_37
+                0x0000000000002476                __vector_4
+                0x0000000000002476                __vector_51
+                0x0000000000002476                __vector_9
+                0x0000000000002476                __vector_2
+                0x0000000000002476                __vector_21
+                0x0000000000002476                __vector_15
+                0x0000000000002476                __vector_36
+                0x0000000000002476                __vector_40
+                0x0000000000002476                __vector_8
+                0x0000000000002476                __vector_26
+                0x0000000000002476                __vector_48
+                0x0000000000002476                __vector_14
+                0x0000000000002476                __vector_57
+                0x0000000000002476                __vector_53
+                0x0000000000002476                __vector_10
+                0x0000000000002476                __vector_50
+                0x0000000000002476                __vector_16
+                0x0000000000002476                __vector_18
+                0x0000000000002476                __vector_20
+                0x0000000000002476                __vector_42
+
+.text._Exit     0x000000000000247a        0x4
+ .text._Exit    0x000000000000247a        0x4 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(_Exit.o)
+                0x000000000000247a                _Exit
+
+.text.__dummy_fini
+                0x000000000000247e        0x2
+ .text.__dummy_fini
+                0x000000000000247e        0x2 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(exit.o)
+                0x000000000000247e                _fini
+
+.text.__dummy_funcs_on_exit
+                0x0000000000002480        0x2
+ .text.__dummy_funcs_on_exit
+                0x0000000000002480        0x2 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(exit.o)
+                0x0000000000002480                __funcs_on_exit
+
+.text.__dummy_simulator_exit
+                0x0000000000002482        0x2
+ .text.__dummy_simulator_exit
+                0x0000000000002482        0x2 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(exit.o)
+                0x0000000000002482                __simulator_exit
+
+.rodata         0x0000000000804006       0xbb load address 0x0000000000002484
+ .rodata        0x0000000000804006       0xbb CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\main.c.o
+
+.rodata.state_table
+                0x00000000008040e1       0x16 load address 0x000000000000253f
+ .rodata.state_table
+                0x00000000008040e1       0x16 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__printf_core.o)
+
+.rodata.twi0_eventTable
+                0x00000000008040f7       0x12 load address 0x0000000000002555
+ .rodata.twi0_eventTable
+                0x00000000008040f7       0x12 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\i2c_host\src\twi0.c.o
+
+.data.USART1_stream
+                0x0000000000804119       0x10 load address 0x0000000000002567
+ .data.USART1_stream
+                0x0000000000804119       0x10 CMakeFiles\TestAi2_default_default_XC8_compile.dir\C_\Users\A76570\MPLABProjects\TestAi2\config.mcc\mcc_generated_files\uart\src\usart1.c.o
+                0x0000000000804119                USART1_stream
+
+.rodata.nuls.2781
+                0x000000000080413f        0x7 load address 0x0000000000002577
+ .rodata.nuls.2781
+                0x000000000080413f        0x7 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__fmt_s.o)
+
+.rodata.nilstr.2962
+                0x0000000000804146        0x6 load address 0x000000000000257e
+ .rodata.nilstr.2962
+                0x0000000000804146        0x6 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(__printf_core.o)
+
+.data._stdout   0x000000000080416a        0x2 load address 0x0000000000002584
+ .data._stdout  0x000000000080416a        0x2 c:/progra~1/microc~1/xc8/v3.10/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4\libc.a(stdout.o)
+                0x000000000080416a                _stdout

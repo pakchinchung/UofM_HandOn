@@ -24,7 +24,8 @@ set(TestAi2_default_default_XC8_FILE_TYPE_compile
     "${CMAKE_CURRENT_SOURCE_DIR}/../../../config.mcc/mcc_generated_files/system/src/pins.c"
     "${CMAKE_CURRENT_SOURCE_DIR}/../../../config.mcc/mcc_generated_files/system/src/system.c"
     "${CMAKE_CURRENT_SOURCE_DIR}/../../../config.mcc/mcc_generated_files/timer/src/tca0.c"
-    "${CMAKE_CURRENT_SOURCE_DIR}/../../../config.mcc/mcc_generated_files/uart/src/usart1.c")
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../../config.mcc/mcc_generated_files/uart/src/usart1.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../../config.mcc/millis.c")
 set_source_files_properties(${TestAi2_default_default_XC8_FILE_TYPE_compile} PROPERTIES LANGUAGE C)
 set(TestAi2_default_default_XC8_FILE_TYPE_link)
 set(TestAi2_default_default_XC8_FILE_TYPE_objcopy_avr)

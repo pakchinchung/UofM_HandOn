@@ -262,6 +262,24 @@ void Morse_ToggleLoop(void)
     }
 }
 
+void Morse_Stop(void)
+{
+    loop_active = 0;
+    queue_tail = queue_head;
+    state = STATE_IDLE;
+    delay_counter = 0;
+    current_pattern = 0;
+    bits_remaining = 0;
+    current_char = '\0';
+    LED_Off();
+    log_head = log_tail;
+}
+
+uint8_t Morse_IsLooping(void)
+{
+    return loop_active;
+}
+
 void Morse_SetSpeed(uint16_t ms)
 {
     if (ms < 10U) ms = 10U;

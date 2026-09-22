@@ -8,6 +8,8 @@ void Morse_QueueChar(char c);
 void Morse_QueueString(const char *str);
 void Morse_Replay(void);
 void Morse_ToggleLoop(void);
+void Morse_Stop(void);
+uint8_t Morse_IsLooping(void);
 void Morse_SetSpeed(uint16_t unit_ms);
 uint16_t Morse_GetSpeed(void);
 void Morse_Tick(void);

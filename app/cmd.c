@@ -68,6 +68,7 @@ static void execute(void)
         UART_WriteString("/speed <ms>       - Set dot unit (10-1000ms)\r\n");
         UART_WriteString("/speed            - Show current speed\r\n");
         UART_WriteString("/loop             - Toggle replay loop on/off\r\n");
+        UART_WriteString("/stop             - Stop loop and abort playback\r\n");
         UART_WriteString("/replay           - Replay last message once\r\n");
         UART_WriteString("/decode <morse>   - Decode morse to text\r\n");
         UART_WriteString("  Use . and - for dots/dashes\r\n");
@@ -76,6 +77,9 @@ static void execute(void)
         UART_WriteString("----------------\r\n");
     } else if (str_eq(cmd_buf, "loop")) {
         Morse_ToggleLoop();
+    } else if (str_eq(cmd_buf, "stop")) {
+        Morse_Stop();
+        UART_WriteString("[STOP]\r\n");
     } else if (str_eq(cmd_buf, "replay")) {
         UART_WriteString("[REPLAY]\r\n");
         Morse_Replay();

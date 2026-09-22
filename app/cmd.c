@@ -1,6 +1,7 @@
 #include "cmd.h"
 #include "uart.h"
 #include "morse.h"
+#include "key.h"
 
 #define CMD_BUF_SIZE 128U
 #define RX_BUF_SIZE  64U
@@ -68,9 +69,15 @@ static void execute(void)
         UART_WriteString("/speed <ms>       - Set dot unit (10-1000ms)\r\n");
         UART_WriteString("/speed            - Show current speed\r\n");
         UART_WriteString("/loop             - Toggle replay loop on/off\r\n");
-        UART_WriteString("/stop             - Stop loop and abort playback\r\n");
+        UART_WriteString("/stop             - Stop playback, enable PA26 key\r\n");
         UART_WriteString("/replay           - Replay last message once\r\n");
         UART_WriteString("/decode <morse>   - Decode morse to text\r\n");
+        UART_WriteString("/key <ms>         - Set key dot unit (20-2000ms)\r\n");
+        UART_WriteString("/key              - Show key unit and state\r\n");
+        UART_WriteString("/keyreset         - Clear pending key input\r\n");
+        UART_WriteString("/keydebug         - Toggle raw tap timing print\r\n");
+        UART_WriteString("/keypin           - Show live PA26 level\r\n");
+        UART_WriteString("  PA26 key decode only runs after /stop\r\n");
         UART_WriteString("  Use . and - for dots/dashes\r\n");
         UART_WriteString("  Space between letters, / between words\r\n");
         UART_WriteString("  Example: /decode ... --- ...\r\n");
@@ -79,7 +86,8 @@ static void execute(void)
         Morse_ToggleLoop();
     } else if (str_eq(cmd_buf, "stop")) {
         Morse_Stop();
-        UART_WriteString("[STOP]\r\n");
+        Key_Reset();
+        UART_WriteString("[STOP] PA26 key active\r\n");
     } else if (str_eq(cmd_buf, "replay")) {
         UART_WriteString("[REPLAY]\r\n");
         Morse_Replay();
@@ -97,6 +105,30 @@ static void execute(void)
         } else {
             UART_WriteString("Invalid speed (10-1000)\r\n");
         }
+    } else if (str_eq(cmd_buf, "key")) {
+        UART_WriteString("Key unit: ");
+        print_number(Key_GetUnit());
+        UART_WriteString("ms, decode ");
+        UART_WriteString(Morse_IsStopped() ? "ACTIVE\r\n" : "INACTIVE (use /stop)\r\n");
+    } else if (str_starts(cmd_buf, "key ")) {
+        uint16_t val = parse_number(&cmd_buf[4]);
+        if (val >= 20U && val <= 2000U) {
+            Key_SetUnit(val);
+            UART_WriteString("Key unit set to ");
+            print_number(val);
+            UART_WriteString("ms\r\n");
+        } else {
+            UART_WriteString("Invalid unit (20-2000)\r\n");
+        }
+    } else if (str_eq(cmd_buf, "keyreset")) {
+        Key_Reset();
+        UART_WriteString("[KEY RESET]\r\n");
+    } else if (str_eq(cmd_buf, "keydebug")) {
+        Key_SetVerbose(Key_GetVerbose() ? 0U : 1U);
+        UART_WriteString(Key_GetVerbose() ? "[KEY DEBUG ON]\r\n" : "[KEY DEBUG OFF]\r\n");
+    } else if (str_eq(cmd_buf, "keypin")) {
+        UART_WriteString("PA26 = ");
+        UART_WriteString(Key_ReadPin() ? "1 (released)\r\n" : "0 (pressed)\r\n");
     } else if (str_starts(cmd_buf, "decode ")) {
         char *p = &cmd_buf[7];
         char token[8];

@@ -32,6 +32,7 @@
 #include "../../app/morse.h"
 #include "../../app/button.h"
 #include "../../app/cmd.h"
+#include "../../app/key.h"
 
 
 
@@ -45,6 +46,7 @@ static void tick_handler(void)
 {
     Morse_Tick();
     Button_Tick();
+    Key_Tick();
     CMD_Tick();
 }
 
@@ -59,15 +61,18 @@ int main ( void )
     Morse_Init();
     CMD_Init();
     Button_Init();
+    Key_Init();
     Button_SetPressedCallback(Morse_ToggleLoop);
     Timer_RegisterCallback(tick_handler);
 
     UART_WriteString("Morse Ready - type /help for commands\r\n");
+    UART_WriteString("Send /stop to tap morse on the PA26 key\r\n");
 
     while ( true )
     {
         CMD_Process();
         Morse_FlushLog();
+        Key_FlushLog();
     }
 
     /* Execution should not come here during normal operation */

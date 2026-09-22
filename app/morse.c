@@ -124,6 +124,9 @@ static char msg_buf[MSG_BUF_SIZE];
 static uint8_t msg_len;
 static uint8_t msg_complete;
 static volatile uint8_t loop_active;
+// Set by Morse_Stop, cleared as soon as anything is queued for playback.
+// The PA26 key decoder only runs while this is set.
+static volatile uint8_t stopped;
 
 static morse_state_t state;
 static uint16_t delay_counter;
@@ -152,18 +155,58 @@ static uint8_t count_bits(uint8_t pattern)
     return count;
 }
 
+// Patterns are packed into a uint8_t: a sentinel bit plus one bit per element,
+// so at most 7 elements fit. Anything longer cannot be represented and is
+// rejected rather than silently aliasing onto a shorter pattern.
+#define MAX_PACKED_ELEMENTS 7U
+
 static uint8_t encode_pattern(const char *p)
 {
     uint8_t len = 0;
     uint8_t bits = 0;
     const char *s = p;
     while (*s == '.' || *s == '-') { len++; s++; }
+    if (len > MAX_PACKED_ELEMENTS) return 0;
     for (uint8_t i = 0; i < len; i++) {
         if (p[i] == '-') {
             bits |= (1U << i);
         }
     }
     return (1U << len) | bits;
+}
+
+// Prosigns are run-together letter groups keyed as a single character, so they
+// exceed the 7-element packed encoding and are matched as literal strings.
+typedef struct {
+    const char *pattern;
+    const char *text;
+} morse_prosign_t;
+
+static const morse_prosign_t morse_prosign[] = {
+    { "...---...", "SOS" },  // distress
+    { ".-.-.",     "AR" },   // end of message
+    { "-...-.-",   "SK" },   // end of contact
+    { "-.-.-",     "KA" },   // attention
+    { "...-.",     "VE" },   // understood
+    { "........", "HH" },    // error
+};
+
+static uint8_t pattern_matches(const char *a, const char *b)
+{
+    while (*a != '\0' && *b != '\0') {
+        if (*a++ != *b++) return 0;
+    }
+    return (*a == *b) ? 1U : 0U;
+}
+
+const char *Morse_DecodeProsign(const char *pattern)
+{
+    for (uint8_t i = 0; i < sizeof(morse_prosign) / sizeof(morse_prosign[0]); i++) {
+        if (pattern_matches(morse_prosign[i].pattern, pattern)) {
+            return morse_prosign[i].text;
+        }
+    }
+    return (const char *)0;
 }
 
 char Morse_DecodePattern(const char *pattern)
@@ -196,6 +239,7 @@ void Morse_Init(void)
     msg_len = 0;
     msg_complete = 0;
     loop_active = 0;
+    stopped = 0;
     LED_Off();
 }
 
@@ -209,6 +253,11 @@ void Morse_FlushLog(void)
 
 void Morse_QueueChar(char c)
 {
+    // A bare CR/LF only terminates a message; it must not cancel /stop,
+    // otherwise a CRLF terminal re-enables playback right after /stop.
+    if (c != '\r' && c != '\n') {
+        stopped = 0;
+    }
     uint8_t next = (queue_head + 1U) % QUEUE_SIZE;
     if (next != queue_tail) {
         queue_buf[queue_head] = c;
@@ -231,6 +280,7 @@ void Morse_QueueChar(char c)
 
 void Morse_QueueString(const char *str)
 {
+    stopped = 0;
     while (*str != '\0') {
         uint8_t next = (queue_head + 1U) % QUEUE_SIZE;
         if (next == queue_tail) break;
@@ -242,6 +292,7 @@ void Morse_QueueString(const char *str)
 void Morse_Replay(void)
 {
     if (msg_len == 0U) return;
+    stopped = 0;
     for (uint8_t i = 0; i < msg_len; i++) {
         uint8_t next = (queue_head + 1U) % QUEUE_SIZE;
         if (next == queue_tail) break;
@@ -265,6 +316,7 @@ void Morse_ToggleLoop(void)
 void Morse_Stop(void)
 {
     loop_active = 0;
+    stopped = 1;
     queue_tail = queue_head;
     state = STATE_IDLE;
     delay_counter = 0;
@@ -278,6 +330,11 @@ void Morse_Stop(void)
 uint8_t Morse_IsLooping(void)
 {
     return loop_active;
+}
+
+uint8_t Morse_IsStopped(void)
+{
+    return stopped;
 }
 
 void Morse_SetSpeed(uint16_t ms)

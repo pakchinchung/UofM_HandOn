@@ -29,6 +29,7 @@ set(TestPl10Again_default_default_XC32_FILE_TYPE_compile
     "${CMAKE_CURRENT_SOURCE_DIR}/../../../My_MCC_Config/src/main.c"
     "${CMAKE_CURRENT_SOURCE_DIR}/../../../app/button.c"
     "${CMAKE_CURRENT_SOURCE_DIR}/../../../app/cmd.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../../app/key.c"
     "${CMAKE_CURRENT_SOURCE_DIR}/../../../app/led.c"
     "${CMAKE_CURRENT_SOURCE_DIR}/../../../app/morse.c"
     "${CMAKE_CURRENT_SOURCE_DIR}/../../../app/timer.c"

@@ -1,0 +1,14 @@
+{
+    "mplab.clangd.compileCommandsDir": "${workspaceFolder}\\_build\\TestPl10Again\\default",
+    "mplab.clangd.path": "c:\\Program Files\\Microchip\\xc32\\v5.10\\bin\\xc32-clangd.exe",
+    "cmake.sourceDirectory": "C:/Users/A76570/MPLABProjects/TestPl10Again/cmake/TestPl10Again/default",
+    "memory-inspector.debugTypes": [
+        "arm-debugger",
+        "embedded-debug",
+        "gdb",
+        "mplab-core-da"
+    ],
+    "mplab.clangd.arguments": [
+        "--header-insertion=never"
+    ]
+}

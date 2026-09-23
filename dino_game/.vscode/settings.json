@@ -1,7 +1,7 @@
 {
-    "mplab.clangd.compileCommandsDir": "${workspaceFolder}\\_build\\TestPl10Again\\default",
+    "mplab.clangd.compileCommandsDir": "${workspaceFolder}\\_build\\DinoGame\\default",
     "mplab.clangd.path": "c:\\Program Files\\Microchip\\xc32\\v5.10\\bin\\xc32-clangd.exe",
-    "cmake.sourceDirectory": "C:/Users/A76570/MPLABProjects/TestPl10Again/cmake/TestPl10Again/default",
+    "cmake.sourceDirectory": "C:/Users/A76570/MPLABProjects/TestPl10Again/dino_game/cmake/DinoGame/default",
     "memory-inspector.debugTypes": [
         "arm-debugger",
         "embedded-debug",

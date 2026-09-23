@@ -14,3 +14,10 @@ out/
 *~
 Thumbs.db
 desktop.ini
+
+# Root is a container for morse/ and dino_game/, not a project. The MPLAB
+# extension regenerates cmake/ here if the root folder is opened.
+/cmake/
+
+# MPLAB programmer log
+MPLABXLog.xml

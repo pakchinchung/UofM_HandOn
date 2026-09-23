@@ -21,3 +21,6 @@ desktop.ini
 
 # MPLAB programmer log
 MPLABXLog.xml
+
+# Claude Code project instructions, never committed
+CLAUDE.md
